@@ -26,7 +26,7 @@
                 </a>
                 <div class="top_phn">
                     <img src="assets/images/phone.png" alt="">
-                    <a href="tel: 01961186010">+88019000000</a>
+                    <a href="tel: 01961186010">+88017000000</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,7 @@
     <!--Header Area End-->
 
     <!--Banner Area Start-->
-    <section class="banner d-flex align-items-center" style="background-image: url('Image/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg');  background-position-y: -100px;">
+    <section class="banner d-flex align-items-center" style="background-image: url('Images/slide_2.jpg');  background-position-y: -100px;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
