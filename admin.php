@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>Admin Pannel</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/new.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -45,7 +45,7 @@
    <?php
         if(isset($_POST['add']))
         {
-            if($_POST['admin_name']=="hridoy"&&$_POST['admin_password']=="1234")
+            if($_POST['admin_name']=="ankita"&&$_POST['admin_password']=="1234")
             {
                header("Location: admin_show.php");
             }
