@@ -5,7 +5,7 @@
      ?>
 
 <head>
-    <title>Hello, world!</title>
+    <title>Place</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
