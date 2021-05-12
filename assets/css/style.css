@@ -285,68 +285,6 @@ nav {
 
 
 
-/* Testimonial Area CSS START*/
-
-
-.testimonial {
-    padding: 68px 20px;
-}
-
-
-.clients_review p {
-    font-size: 22px;
-    font-family: 'Times New Roman';
-}
-
-.client_info p:nth-child(1) {
-    color: #6fb048;
-}
-
-.client_info {
-    margin-top: 50px;
-
-}
-
-.client_info p {
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.shape {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: url(../../Image/ridoy.jpg.jpeg);
-    background-position-x: -155px;
-    background-position-y: -69px;
-    background-size: 550px;
-}
-
-.shape1 {
-    width: 300px;
-    height: 300px;
-    margin-right: 244px;
-    border-radius: 50%;
-    background: url(../../Image/lxp.jpg.jpg);
-    background-position-x: -112px;
-    background-position-y: -118px;
-    background-size: 550px;
-}
-
-.shape2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: url(../../Image/rakib_ali.jpg.jpg);
-    background-position-x: -112px;
-    background-position-y: -77px;
-    background-size: 550px;
-}
-
-/* Testimonial Area CSS START*/
-
-
-
 
 /*Call to Action Area Start*/
 .call_to_action {
