@@ -1,0 +1,387 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+h5 {
+    color: #83a7a5;
+    font-size: 14px;
+}
+
+h2 {
+
+    color: coral
+}
+
+h1 {
+
+    color: forestgreen
+}
+
+
+
+
+/*Header CSS Start*/
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(192, 193, 193, 0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(192, 193, 193, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(192, 193, 193, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#d1fdff", GradientType=1);
+    height: 30vh;
+}
+
+nav {
+    border-bottom-width: 1px;
+    border-bottom-color: #ffffff33;
+    border-bottom-style: solid;
+    padding: 25px 0px !important;
+}
+
+.top_phn {
+
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.top_phn::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 18px;
+    background: #ffffff33;
+    top: 5px;
+    left: 0;
+}
+
+.top_phn img {
+    height: 13px;
+    margin-right: 5px;
+}
+
+.top_phn a {
+    color: white;
+    font-size: 13px;
+}
+
+.active a {
+    font-weight: 700;
+}
+
+.nav-item {
+    margin-left: 15px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.get_started {
+    background: #ffffff59;
+    border-radius: 3px;
+    padding: 8px 20px !important;
+    font-weight: 700;
+    color: white !important;
+}
+.get_started1 {
+    background: #ffffff59;
+    border-radius: 3px;
+    padding: 8px 20px !important;
+    font-weight: 700;
+    color: white !important;
+}
+
+/*Header CSS End*/
+
+
+/*Banner CSS Start*/
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    position: relative;
+}
+
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner_content h1 {
+    font-size: 38px;
+    color: white;
+}
+
+.banner_content p {
+    color: white;
+    margin: 20px 0px;
+}
+
+.custom_btn {
+    background-color: #6fb048;
+    border: 1px solid #6fb048;
+    padding: 10px 0px;
+    margin-left: 500px;
+    width: 186px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    transition: all .4s;
+}
+
+
+.custom_btn:hover {
+    background: transparent;
+}
+
+
+
+
+/*Banner CSS End*/
+
+
+/*features CSS Start*/
+.features {
+    padding: 80px 20px;
+}
+
+
+.title {
+    text-align: center;
+}
+
+
+.title h1 {
+    color: #0f5f5c;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.hig {
+
+    margin-top: 96px;
+
+}
+
+.title h1::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background: #6fb048;
+    bottom: -20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.title p {
+    font-size: 15px;
+}
+
+
+/*features CSS End*/
+.hydrated[name="logo-ionitron"] {
+    color: green;
+    font-size: 40px;
+}
+
+
+.features_item img {
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.features_item h2 {
+    font-size: 16px;
+    color: #0f5f5c;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.features_item {
+    margin-top: 50px;
+}
+
+.divider {
+
+    position: relative;
+    margin-top: 35px;
+    height: 101px;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background: #f2f2f2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background: #f2f2f2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.sub_item {
+    margin: 70px 0px;
+}
+
+.sub_item img {
+
+    display: inline-block;
+
+    margin-right: 16px;
+
+    margin-top: -3px;
+}
+
+.sub_item h2 {
+    display: inline-block;
+    font-size: 16px;
+    color: #0f5f5c;
+    margin-bottom: 25px;
+    font-weight: 700;
+    vertical-align: baseline;
+}
+
+.sub_item p {
+    padding-right: 10%;
+}
+
+
+.items {
+    /*    border: 1px solid black;*/
+}
+
+.items:nth-child(3) {
+    border: 1px solid black;
+}
+
+
+
+
+/* Testimonial Area CSS START*/
+
+
+.testimonial {
+    padding: 68px 20px;
+}
+
+
+.clients_review p {
+    font-size: 22px;
+    font-family: 'Times New Roman';
+}
+
+.client_info p:nth-child(1) {
+    color: #6fb048;
+}
+
+.client_info {
+    margin-top: 50px;
+
+}
+
+.client_info p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.shape {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url(../../Image/ridoy.jpg.jpeg);
+    background-position-x: -155px;
+    background-position-y: -69px;
+    background-size: 550px;
+}
+
+.shape1 {
+    width: 300px;
+    height: 300px;
+    margin-right: 244px;
+    border-radius: 50%;
+    background: url(../../Image/lxp.jpg.jpg);
+    background-position-x: -112px;
+    background-position-y: -118px;
+    background-size: 550px;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url(../../Image/rakib_ali.jpg.jpg);
+    background-position-x: -112px;
+    background-position-y: -77px;
+    background-size: 550px;
+}
+
+/* Testimonial Area CSS START*/
+
+
+
+
+/*Call to Action Area Start*/
+.call_to_action {
+    padding: 80px 20px;
+    background: url("../images/call_to_action_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.call_to_action .title {
+    text-align: left;
+}
+
+.call_to_action .title h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.call_to_action .title p {
+    margin-bottom: 0;
+}
+
+.call_to_action .title h1::after {
+    content: unset;
+}
+
+.call_to_action .custom_btn {
+    text-transform: uppercase;
+    width: auto;
+    padding: 15px 20px;
+}
+
+/*Call to Action Area End*/
