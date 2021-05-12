@@ -1,0 +1,57 @@
+.margin {
+
+    margin-top: 20px;
+
+
+}
+
+.name {
+
+    font-family: fantasy;
+    color: coral;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.hbg {
+
+
+    background-color: #6957af47;
+}
+
+.jumbotron {
+
+    background-color: #c9f8ff;
+    background-image: url(../Image/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ background-position-y: -69px;
+
+    border-radius: 0;
+    opacity: 0.7;
+
+}
+
+
+.cl {
+
+    color: #fff;
+
+}
+
+.mr-auto{
+    
+    margin-left: 110px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    padding-top: 140px;
+}
+
+
+
+
+
