@@ -22,11 +22,11 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">
-                    <h3>T&T</h3>
+                    <h3>TravelBD</h3>
                 </a>
                 <div class="top_phn">
                     <img src="assets/images/phone.png" alt="">
-                    <a href="tel: 01961186010">+8801961186010</a>
+                    <a href="tel: 01961186010">+88019000000</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,8 +66,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="banner_content">
-                        <h1>Welcome to Tour And Travel </h1>
-                        <p>T&T is multipurpose place, with cheap and great Travel packages.<br>T&T is perfect place for you to tavel!</p>
+                        <h1>Welcome to Bangladesh </h1>
+                        <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
 
                     </div>
                 </div>
@@ -152,96 +152,7 @@
 
 
 
-
-    <!--Testimonials Area Start-->
-
-    <div class="title hig">
-        <h1>Our Guide</h1>
-    </div>
-
-
-    <section class="testimonial">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="clients_review">
-                        <h2> Faysal Ahmed Hridoy </h2>
-                        <h5> Experienced Travel Guide with 4years of Experience. Tour Guied 32+</h5>
-
-                        <div class="client_info">
-                            <p>Faysal Ahmed Hridoy</p>
-                            <p>Expert Guide</p>
-                            <p>Tour & Travel Co.</p>
-                            <p>Phone : +8801961186010</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="shape ml-auto"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="testimonial">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="shape1 ml-auto"></div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="clients_review">
-                        <h2> Tanim Hasan Mahmud </h2>
-                        <h5> Experienced Travel Guide with 4years of Experience. Tour Guied 20+</h5>
-
-                        <div class="client_info">
-                            <p>Tanim Hasan Mahmud</p>
-                            <p>Expert Guide</p>
-                            <p>Tour & Travel Co.</p>
-                            <p>Phone : +8801961186010</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <section class="testimonial">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="clients_review">
-                        <h2> Rakib Ali Tanzin </h2>
-                        <h5> Experienced Travel Guide with 4years of Experience. Tour Guied 4+</h5>
-
-                        <div class="client_info">
-                            <p>Rakib Ali Tanzin</p>
-                            <p>Expert Guide</p>
-                            <p>Tour & Travel Co.</p>
-                            <p>Phone : +8801961186010</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="shape2 ml-auto"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Testimonial  Area End-->
-
-
-
+    
 
     <div class="container">
         <div class="col-sm">
