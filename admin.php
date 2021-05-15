@@ -31,7 +31,8 @@
                         <input type="text" id="login" class="fadeIn second" name="admin_name" placeholder="Name">
                         <input type="password" id="password" class="fadeIn third" name="admin_password" placeholder="Password">
                         <input type="submit" class="fadeIn fourth" name="add" value="Log In">
-                        <span ><?php echo "$err"; ?></span></BR>
+                          
+
 
                     </div>
                 </div>
@@ -40,24 +41,25 @@
 
     </form>
 
+            <?php
 
-
-
-   <?php
-
-        
-        if(isset($_POST['add']))
-        {
-            if($_POST['admin_name']=="ankita"&&$_POST['admin_password']=="1234")
+                    
+            if(isset($_POST['add']))
             {
-               header("Location: admin_show.php");
+                if($_POST['admin_name']=="ankita"&&$_POST['admin_password']=="1234")
+                {
+                header("Location: admin_show.php");
+                }
+                else{
+                    echo "Yout username or password is wrong!";
+                }
             }
-            else{
-                $err = "Yout username or password is wrong!";
-            }
-        }
 
-         ?>     
+            ?>  
+
+
+
+
 
 
 </body>
