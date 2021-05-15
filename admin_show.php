@@ -30,15 +30,20 @@
 
 
  <br>
+
+
+ 
     <div class="a ">
 
         <div class="row">
 
-            <div class="col-sm-3">
-                <a href="show_customer.php">
-                    <button class="btn custom_btn ">Customer Info
+        <div class="col-sm-3">
+                 <a href="show_customer.php">
+                    <button class="btn custom_btn ">Show customer info
                     </button>
                 </a>
+            </div>
+
             </div>
             <div class="col-sm-3">
                  <a href="add_place.php">
