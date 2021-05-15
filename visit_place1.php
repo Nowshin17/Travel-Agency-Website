@@ -9,7 +9,7 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Hello, world!</title>
+    <title>Find you trip!</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Google Font CSS-->
