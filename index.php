@@ -127,6 +127,8 @@
 
 
 
+
+
     <!--Perfect Template Area Start-->
     <section class="perfect">
         <div class="container">
@@ -152,6 +154,10 @@
                 </div>
             </div>
         </div>
+
+
+
+        
     </section>
     <!--Perfect Template Area End-->
 
@@ -161,28 +167,22 @@
 
 
 
-    <div class="container">
-        <div class="col-sm">
-            <div class="divider"></div>
-        </div>
-        <div class="w-100"></div>
-    </div>
-
+   
 
 
     <!--Call to Action Area Start -->
     <section class="call_to_action">
+        
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-8">
                     <div class="title">
-                        <h1>Need Tour Booking? Book Now</h1>
+                        <h1>Need Tour Booking?</h1><br>
                     </div>
+
+                   
                 </div>
-                <div class="col-sm-4 align-self-center">
-                    <a href="customer_reg.php">
-                        <button class="btn custom_btn ">Book Now
-                        </button>
+                
                     </a>
                 </div>
             </div>
