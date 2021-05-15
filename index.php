@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="banner_content">
-                        <h1>Welcome to Bangladesh </h1>
+                        <h1>Welcome to <br><b><div color:green>Bangladesh </div></b></h1>
                         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
 
                     </div>
