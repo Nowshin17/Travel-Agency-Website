@@ -21,6 +21,8 @@
             }
     </style>
 </head>
+
+
 <body>
     <h2>Delete Customer</h2>
     <form action="delete_customer.php" method="post">
