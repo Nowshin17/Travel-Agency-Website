@@ -262,6 +262,7 @@ $customer_id = $_SESSION['id'];
     </style>
 
     <div class="button_div"><a href="check_book_bill.php" class="button">Check Book and Bill</a></div>
+    <div class="button_div"><a href="visit_place.php" class="button">Go to User Profile</a></div>
 
 </body>
 
