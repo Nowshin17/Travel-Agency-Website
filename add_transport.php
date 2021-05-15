@@ -3,6 +3,24 @@
 include('connection.php');
 ?>
 <html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add hotel</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+    <style> 
+            body {
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding: 30px;
+            }
+    </style>
+</head>
     <body>
         <h1>Add transport information</h1>
         <form action="add_transport.php" method="post">
