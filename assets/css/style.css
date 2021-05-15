@@ -176,6 +176,13 @@ nav {
 
 
 /*Call to Action Area Start*/
+.call_to_action {
+    padding: 80px 20px;
+    background: url("../images/call_to_action_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
 
 }
 
