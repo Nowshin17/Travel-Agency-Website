@@ -7,7 +7,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Hello, world!</title>
+    <title>Admin pannel</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Google Font CSS-->
@@ -21,7 +21,12 @@
 <body style="margin:50px;">
 
 
+ <h1>Admin pannel</h1>
 
+        Hello, <?php
+            echo $admin_name= "ankita" ;
+            
+            ?>
 
     <div class="container ">
 
