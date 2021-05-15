@@ -90,7 +90,8 @@
    
     <div class="col-sm-12">
         <div class="title">
-            <h1>Place Information</h1>
+        
+            <h1>User profile<br>Place Information</h1>
             
         </div>
     </div>
