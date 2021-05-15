@@ -27,7 +27,7 @@
                 </a>
                 <div class="top_phn">
                     <img src="assets/images/phone.png" alt="">
-                    <a href="tel: 01961186010">+88017000000</a>
+                    <a href="">+88017000000</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
