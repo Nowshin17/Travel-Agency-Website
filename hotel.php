@@ -1,4 +1,119 @@
+
 <!DOCTYPE html>
+<html>
+<?php
+    include('connection.php');
+     ?>
+
+<head>
+    <title>Place</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Find you trip!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Google Font CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Media CSS-->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 5px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+   
+   <div class="container">
+       
+   
+    <div class="col-sm-12">
+        <div class="title">
+            <h1>Place Information</h1>
+            
+        </div>
+    </div>
+
+   
+   
+   
+    <table class="table table-border">
+        <tr>
+            <th>place_name</th>
+            <th>place_img</th>
+        </tr>
+        <?php
+        $sql = "SELECT * FROM hotel";
+        $result = $conn->query($sql);
+        //print_r($result);
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            //print_r($row);
+            ?>
+
+        <tr>
+            <td><?php echo $row['hotel_name']; ?></td>
+            <td>
+                
+            </td>
+        </tr>
+
+        <?php
+            
+        }
+        }
+        ?>
+    </table>
+    </div>
+
+    <br>
+    <center>
+        <a href="index.php"><h4>Go to HOME</h4></a>
+    </center>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,17 +121,16 @@
     <meta charset="UTF-8">
     <title>Hotel</title>
 
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <title>Hello, world!</title>
-    <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--Google Font CSS-->
+    
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-    <!--Custom CSS-->
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="css/new.css">
-    <!--Media CSS-->
+  
     <link rel="stylesheet" href="assets/css/media.css">
 
 </head>
@@ -129,4 +243,4 @@
 
 </body>
 
-</html>
+</html> -->
