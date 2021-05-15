@@ -23,7 +23,7 @@
 </head>
     <body>
     <center>
-        <h1>User Details</h1> </center>
+        <h1> Resgistered Users</h1> </center>
          <style>
         table {
          border-collapse: collapse;
@@ -37,7 +37,7 @@
             <tr>
                 <th>customer_name</th>
                 <th>customer_id</th>
-                <th>customer_password</th>
+               
                 <th>customer_address</th>
                 <th>customer_mail</th>
                 <th>customer_phone</th>
@@ -53,7 +53,7 @@
             <tr>
                 <td><?php echo $row['cust_name']; ?></td>
                 <td><?php echo $row['cust_id']; ?></td>
-                <td><?php echo $row['cust_password']; ?></td>
+               
                 <td><?php echo $row['cust_address']; ?></td>
                 <td><?php echo $row['cust_mail']; ?></td>
                 <td><?php echo $row['cust_phone']; ?></td>
