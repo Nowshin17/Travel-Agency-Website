@@ -19,8 +19,6 @@
     <!--Media CSS-->
     <link rel="stylesheet" href="assets/css/media.css">
 
-
-
     <style>
         .button {
             background-color: #555555;
@@ -40,6 +38,10 @@
         }
 
     </style>
+
+
+
+
 
     <div class="button_div"><a href="log_out.php" class="button">Log Out</a></div>
 
