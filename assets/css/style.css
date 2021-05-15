@@ -132,22 +132,6 @@ nav {
     margin: 20px 0px;
 }
 
-.custom_btn {
-    background-color: #6fb048;
-    border: 1px solid #6fb048;
-    padding: 10px 0px;
-    margin-left: 500px;
-    width: 186px;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Montserrat";
-    transition: all .4s;
-}
-
-
-.custom_btn:hover {
-    background: transparent;
-}
 
 
 
@@ -158,6 +142,7 @@ nav {
 /*features CSS Start*/
 .features {
     padding: 80px 20px;
+    background-color: red;
 }
 
 
