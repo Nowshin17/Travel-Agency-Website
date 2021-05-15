@@ -82,14 +82,14 @@
                 <div class="col-sm-12">
                     <div class="title">
                         <h1>Our features</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                        <p>We are here for you to discover the beautiful places of <b>Bangladesh</b></p>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="features_item text-center">
                         <img src="Image/icons8-place-marker-80.png" alt="">
                         <h2>Place</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                        <p>You can search places. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
                     </div>
                 </div>
                 <div class="col-sm">
