@@ -59,6 +59,9 @@
     </header>
     <!--Header Area End-->
 
+
+
+
     <!--Banner Area Start-->
     <section class="banner d-flex align-items-center" style="background-image: url('Images/slide_2.jpg');  background-position-y: -100px;">
         <div class="container">
@@ -74,6 +77,9 @@
         </div>
     </section>
     <!--Banner Area End-->
+
+
+
 
     <!--Features Area Start-->
     <section class="features">
@@ -117,6 +123,8 @@
         </div>
     </section>
     <!--Features Area End-->
+
+
 
 
     <!--Perfect Template Area Start-->
