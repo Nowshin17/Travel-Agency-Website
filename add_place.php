@@ -3,7 +3,26 @@
 include('connection.php');
 ?>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add hotel</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+    <style> 
+            body {
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding: 30px;
+            }
+    </style>
+</head>
     <body>
+    
+        <h1>Add places</h1> 
         <?php
         if(isset($_POST['uploadfilesub']))
         {
@@ -26,5 +45,9 @@ include('connection.php');
             <input type = "file" name = "uploadfile"><br>
             <input type = "submit" name ="uploadfilesub" value = "upload" />
         </form>
+<br>
+        
+        <a href="admin_show.php"><h4>Go to Admin panel</h4></a>
+       
     </body>
 </html>
