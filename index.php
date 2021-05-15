@@ -144,8 +144,8 @@
                     <h1>Our Ready Plan</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                     <div class="check_text">
-                        <img src="assets/images/check.png" alt="">
-                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    
+                        <p><p>Lorem Ipsum is simply dummy text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p></p>
                         <img src="assets/images/check.png" alt="">
                         <p>Donec id elit non mi porta gravida at eget metus.</p>
                     </div>
