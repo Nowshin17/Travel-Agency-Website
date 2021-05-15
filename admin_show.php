@@ -13,7 +13,7 @@
     <!--Google Font CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
     <!--Custom CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
 </head>
 
@@ -62,7 +62,7 @@
            
             
            
-            <div class="col-md-3" style="padding-top:100px; margin-left:738px;" >
+            <div class="col-md-3"  >
     
                <a href="delete_customer.php">
                    <button class="btn custom_btn ">Delete User
@@ -70,19 +70,37 @@
                </a>
            </div>
 
+           <div class="col-md-3"" >
+    
+                <a href="">
+                    <button class="btn custom_btn ">booking details
+                    </button>
+                </a>
+            </div>
+
 
            </div>
-                <div class="col-md-3" style="padding-top:100px; margin-left:737px;">
+                <div class="col-md-3"">
                  <a href="add_transport.php">
                     <button class="btn custom_btn ">Add Transport
                     </button>
 
                     
                 </a>
-
-
             
         </div>
+
+        </div>
+                <div class="col-md-3"">
+                 <a href="log_out.php">
+                    <button class="btn custom_btn ">Logout
+                    </button>
+
+                    
+                </a>
+            
+        </div>
+
 
         
 
