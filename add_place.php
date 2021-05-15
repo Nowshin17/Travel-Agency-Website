@@ -38,6 +38,8 @@ include('connection.php');
             }
         }
         ?>
+
+        
         <form action = "add_place.php" method = "post" enctype="multipart/form-data">
             <p>place_name</p>
             <input type = "text" placeholder = "place name" name = "place_name" />
