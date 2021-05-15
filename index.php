@@ -180,7 +180,10 @@
                         <h1>Need Tour Booking?</h1><br>
                     </div>
 
-                   
+                    <!-- <div class="col-sm-4 align-self-center">
+                    <a href="customer_reg.php">
+                        <button class="btn custom_btn ">Book Now
+                        </button> -->
                 </div>
                 
                     </a>
