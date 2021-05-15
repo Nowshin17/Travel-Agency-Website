@@ -63,6 +63,10 @@ include('connection.php');
             
         }
         ?>
+
+        <center>
+        <a href="admin_show.php"><h3>Go to Admin panel</h3></a>
+        </center>
         
         
     </body>
