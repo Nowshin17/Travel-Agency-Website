@@ -135,15 +135,15 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title">
-                        <h1>Looking for the perfect Tour Plan?</h1>
-                        <p>You can get you suitable palns here</p>
+                        <h1>Do You Want to know about Bangladesh?</h1>
+                        <p>Please visit here</p>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img-fluid" src="Image/man-standing-on-a-rock-1271619.jpg" alt="image error">
-                </div>
+                    <a herf="www.bangladesh.com" > <img class="img-fluid" src="Image/man-standing-on-a-rock-1271619.jpg" alt="image error">
+                </div></a>
                 <div class="col-sm-6">
-                    <h1>Our Ready Plan</h1>
+                <a class="navbar-brand" href="www.bangladesh.com"> <h1>Bangladesh</h1> </a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                     <div class="check_text">
                     
