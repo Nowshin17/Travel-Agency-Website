@@ -142,7 +142,6 @@ nav {
     
 }
 
-
 .title {
     text-align: center;
 }
@@ -155,7 +154,6 @@ nav {
     font-size: 36px;
     font-weight: 300;
 }
-
 
 
 .title h1::after {
@@ -175,105 +173,9 @@ nav {
 }
 
 
-/*features CSS End*/
-.hydrated[name="logo-ionitron"] {
-    color: green;
-    font-size: 40px;
-}
-
-
-.features_item img {
-    height: 50px;
-    margin-bottom: 25px;
-}
-
-.features_item h2 {
-    font-size: 16px;
-    color: #0f5f5c;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.features_item {
-    margin-top: 50px;
-}
-
-.divider {
-
-    position: relative;
-    margin-top: 35px;
-    height: 101px;
-}
-
-.divider::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 70px;
-    background: #f2f2f2;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 0;
-}
-
-.divider::after {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 2px;
-    background: #f2f2f2;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 0;
-}
-
-.sub_item {
-    margin: 70px 0px;
-}
-
-.sub_item img {
-
-    display: inline-block;
-
-    margin-right: 16px;
-
-    margin-top: -3px;
-}
-
-.sub_item h2 {
-    display: inline-block;
-    font-size: 16px;
-    color: #0f5f5c;
-    margin-bottom: 25px;
-    font-weight: 700;
-    vertical-align: baseline;
-}
-
-.sub_item p {
-    padding-right: 10%;
-}
-
-
-.items:nth-child(3) {
-    border: 1px solid black;
-}
-
-
-
-
-
 
 
 /*Call to Action Area Start*/
-.call_to_action {
-    padding: 80px 20px;
-    background: url("../images/call_to_action_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    background-size: cover;
 
 }
 
