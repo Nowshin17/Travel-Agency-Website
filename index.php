@@ -96,14 +96,14 @@
                     <div class="features_item text-center">
                         <img src="Image/icons8-hotel-80.png" alt="">
                         <h2>Hotel</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                        <p>You can book hotels. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="features_item text-center">
                         <img src="Image/icons8-car-64.png" alt="">
                         <h2>Transportation</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.a.</p>
+                        <p>You can book seats. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.a.</p>
                     </div>
                 </div>
                 <div class="w-100"></div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img-fluid" src="Image/teal-fujifilm-instax-mini-camera-near-white-ceramic-mug-1051073.jpg" alt="image error">
+                    <img class="img-fluid" src="Image/man-standing-on-a-rock-1271619.jpg" alt="image error">
                 </div>
                 <div class="col-sm-6">
                     <h1>Our Ready Plan</h1>
