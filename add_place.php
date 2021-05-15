@@ -18,6 +18,7 @@ include('connection.php');
             line-height: 26px;
             padding: 30px;
             }
+                
     </style>
 </head>
     <body>
