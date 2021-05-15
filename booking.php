@@ -97,23 +97,23 @@ $customer_id = $_SESSION['id'];
         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="trans_name">
             <option selected>Transport Name</option>
             <?php
-    $sql_2 = "SELECT trans_name,avl_seat,trans_fare,trans_type FROM transport";
-    $result_2 = $conn->query($sql_2);
-    if($result_2->num_rows>0)
-    {
-        while($row = $result_2->fetch_assoc())
+        $sql_2 = "SELECT trans_name,avl_seat,trans_fare,trans_type FROM transport";
+        $result_2 = $conn->query($sql_2);
+        if($result_2->num_rows>0)
         {
-    ?>
-            <td><?php echo $row['trans_name'];  ?></td>
-            <option value="<?php echo $row['trans_name'];   ?>"><?php echo $row['trans_name'];   ?></option>
-            <?php
+            while($row = $result_2->fetch_assoc())
+            {
+        ?>
+                <td><?php echo $row['trans_name'];  ?></td>
+                <option value="<?php echo $row['trans_name'];   ?>"><?php echo $row['trans_name'];   ?></option>
+                <?php
+            }
         }
-    }
-    else
-    {
-        echo "there is an error occur<br>";
-    }
-    ?>
+            else
+            {
+                echo "there is an error occur<br>";
+            }
+            ?>
         </select>
         <br>
         <br><button type="submit" name="submit">submit</button>
