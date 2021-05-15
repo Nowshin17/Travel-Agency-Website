@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Welcome</title>
+    <title>travelBD</title>
+    <link rel="icon" href="Image/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Google Font CSS-->
