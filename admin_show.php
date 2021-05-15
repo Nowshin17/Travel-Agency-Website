@@ -28,7 +28,9 @@
             
             ?>
 
-    <div class="container ">
+
+ <br>
+    <div class="a ">
 
         <div class="row">
 
@@ -44,29 +46,40 @@
                     </button>
                 </a>
             </div>
-            <div class="col-sm-3">
+            
+            <div class="col-md-3">
                  <a href="add_hotel.php">
                     <button class="btn custom_btn ">Add Hotel
                     </button>
                 </a>
+          
             </div>
-                <div class="col-sm-3">
+           
+            
+           
+            <div class="col-md-3" style="padding-top:100px; margin-left:738px;" >
+    
+               <a href="delete_customer.php">
+                   <button class="btn custom_btn ">Delete User
+                   </button>
+               </a>
+           </div>
+
+
+           </div>
+                <div class="col-md-3" style="padding-top:100px; margin-left:737px;">
                  <a href="add_transport.php">
                     <button class="btn custom_btn ">Add Transport
                     </button>
+
+                    
                 </a>
-            </div>
-            
-            <div class="col-md-3" style="padding-top:26px; margin-left:450px;" >
-               
-                <a href="delete_customer.php">
-                    <button class="btn custom_btn ">Delete User
-                    </button>
-                </a>
-            </div>
+
 
             
         </div>
+
+        
 
     </div>
 
