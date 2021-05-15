@@ -52,6 +52,8 @@
             
         }
         ?>
+<br>
+<a href="admin_show.php"><h4>Go to Admin panel</h4></a>
 </body>
 
 </html>
