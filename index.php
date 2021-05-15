@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <title>travelBD</title>
     <link rel="icon" href="Image/logo.png">
