@@ -142,7 +142,7 @@ nav {
 /*features CSS Start*/
 .features {
     padding: 80px 20px;
-    background-color: red;
+    
 }
 
 
@@ -159,11 +159,7 @@ nav {
     font-weight: 300;
 }
 
-.hig {
 
-    margin-top: 96px;
-
-}
 
 .title h1::after {
     content: "";
