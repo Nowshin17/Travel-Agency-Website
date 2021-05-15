@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+    <style> 
+            body {
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding: 30px;
+            }
+                
+    </style>
+</head>
+
+
 <?php
 
 include('connection.php');
@@ -12,6 +35,8 @@ if(isset($_GET['place'])){
 $customer_id = $_SESSION['id'];
 
 ?>
+
+
 <html>
     <h1>Booking Form</h1>
 
@@ -22,7 +47,6 @@ $customer_id = $_SESSION['id'];
   
 
  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -48,23 +72,23 @@ $customer_id = $_SESSION['id'];
         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="hotel_name">
             <option selected>Hotel Name</option>
             <?php
- $sql_1="SELECT hotel_name,avl_room,room_cost FROM hotel WHERE place_name='$place_name'";
+            $sql_1="SELECT hotel_name,avl_room,room_cost FROM hotel WHERE place_name='$place_name'";
 
-$result_1 = $conn->query($sql_1);
-if($result_1->num_rows>0)
-{
-    while($row = $result_1->fetch_assoc())
-    {
-       ?>
-            <option value="<?php echo $row['hotel_name'];   ?>"><?php echo $row['hotel_name'];   ?></option>
+            $result_1 = $conn->query($sql_1);
+            if($result_1->num_rows>0)
+            {
+                while($row = $result_1->fetch_assoc())
+                {
+                ?>
+                        <option value="<?php echo $row['hotel_name'];   ?>"><?php echo $row['hotel_name'];   ?></option>
 
-            <?php
-    }
-}
-else
-{
-    echo "an error occured<br>";
-}
+                        <?php
+                }
+            }
+            else
+            {
+                echo "an error occured<br>";
+            }
 
 ?>
 
