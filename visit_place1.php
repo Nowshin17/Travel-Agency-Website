@@ -78,6 +78,11 @@
         ?>
     </table>
     </div>
+
+    <br>
+    <center>
+        <a href="index.php"><h4>Go to HOME</h4></a>
+    </center>
 </body>
 
 </html>
