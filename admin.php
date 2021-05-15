@@ -16,6 +16,7 @@
 
 <body class="adlog">
     <form action="admin.php" method="post">
+    <?php $err=" "; ?>
 
 
             
@@ -30,7 +31,7 @@
                         <input type="text" id="login" class="fadeIn second" name="admin_name" placeholder="Name">
                         <input type="password" id="password" class="fadeIn third" name="admin_password" placeholder="Password">
                         <input type="submit" class="fadeIn fourth" name="add" value="Log In">
-
+                        <span ><?php echo "$err"; ?></span></BR>
 
                     </div>
                 </div>
@@ -43,11 +44,16 @@
 
 
    <?php
+
+        
         if(isset($_POST['add']))
         {
             if($_POST['admin_name']=="ankita"&&$_POST['admin_password']=="1234")
             {
                header("Location: admin_show.php");
+            }
+            else{
+                $err = "Yout username or password is wrong!";
             }
         }
 
