@@ -4,6 +4,8 @@
     include('connection.php');
      ?>
 
+
+
 <head>
     <title>Hello, world!</title>
 
@@ -95,8 +97,9 @@
             
         </div>
     </div>
-
-
+     <center>
+     <h1>Welcome </h1> 
+     </center>
 
     <table class="table table-border">
         <tr>
