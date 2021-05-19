@@ -274,9 +274,7 @@ nav {
 }
 
 
-.items {
-    /*    border: 1px solid black;*/
-}
+
 
 .items:nth-child(3) {
     border: 1px solid black;
