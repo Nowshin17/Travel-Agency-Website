@@ -28,6 +28,65 @@
 </head>
 
 <body>
+    <!--Header Area Start-->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <h3>TravelBD</h3>
+                </a>
+                <div class="top_phn">
+                    <img src="assets/images/phone.png" alt="">
+                    <a href="">+88017000000</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visit_place1.php">Place</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotel.php">Hotel</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link get_started" href="customer_log.php">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link get_started" href="customer_reg.php">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link get_started" href="admin.php">Admin</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header Area End-->
+
+
+
+   <!--Banner Area Start-->
+   <section class="banner d-flex align-items-center" style="background-image: url('Images/slide_2.jpg');  background-position-y: -100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="banner_content">
+                        <h1>Welcome to <br><b><div >Bangladesh </div></b></h1>
+                        <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Area End-->
+
     <h1 style="text-align:center;">Our Available Hotels</h1>
 
     <div class="container">
