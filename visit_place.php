@@ -74,7 +74,8 @@
                             <a class="nav-link" href="check_book_bill.php">Check bookings and Bills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="hotel.php">Rate the place</a>
+                            <a class="nav-link" href="rating.php">Rate the place</a>
+                          
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="hotel.php">Your Recommended places</a>
@@ -160,6 +161,19 @@
         ?>
     </table>
     </div>
+
+  <br><br>
+
+  <center>
+  <form action="rating.php">
+
+  <input type="submit" name="rating" value="Please rate your favorite place">
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+
+</form>
+    </center>
+
+
 </body>
 
 </html>
