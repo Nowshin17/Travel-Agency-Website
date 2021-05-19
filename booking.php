@@ -165,14 +165,16 @@ $customer_id = $_SESSION['id'];
                 
                 if($conn->query($sql_5))
                 {
-                    echo "new record create successfully<br>";
+                    echo "new record create successfully.<br>";
                 }
                 else
                 {
                     echo "there is an error<br>".$conn->error;
                 }
                 
-                 $temp_room = $available_room - $need_room;
+                 
+                
+            $temp_room = $available_room - $need_room;
             $temp_seat = $available_seat - $need_trans_seat;
            // echo "room baki ace ".$temp_room."<br>";
             //echo "seat khali ace ".$temp_seat."<br>";
@@ -236,33 +238,16 @@ $customer_id = $_SESSION['id'];
         .button_div {
             text-align: center;
         }
-    </style>
 
-    <div class="button_div"><a href="log_out.php" class="button">Log Out</a></div>
     
-    
-        <style>
-        .button {
-            background-color: #555555;
-            border: black;
-            color: white;
-            padding: 15px 32px;
-            /*text-align: right;*/
-            text-decoration: underline;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .button_div {
-            text-align: center;
-        }
-
     </style>
 
     <div class="button_div"><a href="check_book_bill.php" class="button">Check Book and Bill</a></div>
     <div class="button_div"><a href="visit_place.php" class="button">Go to User Profile</a></div>
+    
+
+    
+    
 
 </body>
 
