@@ -36,7 +36,7 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="visit_place1.php">Place</a>
+                        <a class="nav-link" href="visit_place1.php">Place</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="hotel.php">Hotel</a>
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="banner_content">
-                        <h1>Welcome to <br><b><div >Bangladesh </div></b></h1>
+                        <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
                         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
 
                     </div>
