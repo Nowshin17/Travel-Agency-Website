@@ -78,7 +78,7 @@
                           
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="hotel.php">Your Recommended places</a>
+                            <a class="nav-link" href="recommendation.php">Your Recommended places</a>
                         </li>
 
                         <li class="nav-item">
