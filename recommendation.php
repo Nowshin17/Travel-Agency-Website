@@ -50,6 +50,10 @@ label{
 include("recommend.php");
  
 
+session_start();
+
+
+$customer_id = $_SESSION['id'];
 
 
 $movies=mysqli_query($conn,"select * from user_rating");
@@ -59,13 +63,13 @@ $matrix=array();
 while($movie=mysqli_fetch_array($movies))
 {
 
-	$users=mysqli_query($conn,"select name from customer where cust_id=$movie[cust_id]");
+	$users=mysqli_query($conn,"select cust_name from customer where cust_id=$movie[cust_id]");
 	$username=mysqli_fetch_array($users);
 
 	$matrix[$username['cust_name']][$movie['place_name']]=$movie['place_rating'];
 }
 
-$users=mysqli_query($conn,"select name from customer where cust_id=$_GET[id]");
+$users=mysqli_query($conn,"select cust_name from customer where cust_id=$customer_id");
 	$username=mysqli_fetch_array($users);
 
 // echo "<pre>";
