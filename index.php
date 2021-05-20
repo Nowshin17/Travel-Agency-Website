@@ -29,6 +29,8 @@
                     <img src="assets/images/phone.png" alt="">
                     <a href="">+88017000000</a>
                 </div>
+               
+
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
@@ -80,7 +82,7 @@
 
 
 
-
+    <!-- <marquee>TravelBD</marquee> -->
     <!--Features Area Start-->
     <section class="features">
         <div class="container">
