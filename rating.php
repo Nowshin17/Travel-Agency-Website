@@ -58,43 +58,38 @@ $customer_id = $_SESSION['id'];
    
   echo $customer_id;
 
-    //    if(isset($_GET['id']))
-    //        {
-    //           $_SESSION['id'] = $_GET['id'];
-
-    //           }
-             
-    //           $flag=0;
-
-
-
-
-
-        //    $user_id=$place_name= $place_rating = "";
+   
 
     
 
-        //     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 
-        //         $user_id = $_SESSION["id"];
-        //         $place_name = test_input($_POST["movie_name"]);
-        //         $place_rating = test_input($_POST["place_rating"]);
+                $cust_id = $_SESSION['id'];
+                $place_name = test_input($_POST["place_name"]);
+                $place_rating = test_input($_POST["place_rating"]);
                 
               
+                    //     $sql = "INSERT INTO user_rating(cust_id,place_name,place_rating)
+                    //     VALUES ('$cust_id','$place_name','$place_rating')";
 
-                
-        //   }
+                    //     if ($conn->query($sql) === TRUE) {
+                    // echo "Inserted successfully";
+                    // }
+                    //     else {
+                    //     echo "Error: " . $sql . "<br>" . $conn->error;
+                    // }
+                }
 
-        // $sql = "INSERT INTO rating(user_id,place_name,place_rating)
-        // VALUES ('$user_id','$place_name','$place_rating')";
+   
 
-        // if ($conn->query($sql) === TRUE) {
-        //   echo "Inserted successfully";
-        // }
-        //  else {
-        //   echo "Error: " . $sql . "<br>" . $conn->error;
-        // }
+        function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+
+          }
 
 
 
@@ -116,15 +111,11 @@ $customer_id = $_SESSION['id'];
                   <label>rating: </label>
                  <input type="number" name="place_rating"></span>
 
-                 
-
-                 </BR>
-                   
-
-                 </BR>
-                   
-                  
                 
+        </BR>  
+
+                 </BR>
+             
                      <input type="submit" name="Submit" value="register"></BR>
                       </p>
                
@@ -138,49 +129,49 @@ $customer_id = $_SESSION['id'];
                  
  <?php
 
-// echo "<br><br><center>";
-// echo "<h2>QS 2: User informations:</h2>";
+echo "<br><br><center>";
+echo "<h2>Your ratings</h2>";
         
-// $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-// $sql="SELECT *  FROM user_movies ORDER BY user_id DESC;" ;
-// if($result = $conn->query($sql)){
-//    if($result->num_rows > 0){
-//     echo "<table>";
 
-//         echo "<tr>";
-//                 echo "<th>user_id </th>";
-//                 echo "<th>movie name </th>";
-//                 echo "<th>rating </th>";
+$sql="SELECT *  FROM user_rating where cust_id = $customer_id;" ;
+if($result = $conn->query($sql)){
+   if($result->num_rows > 0){
+    echo "<table>";
+
+        echo "<tr>";
+                echo "<th>customer_id </th>";
+                echo "<th>place name </th>";
+                echo "<th>rating </th>";
                 
                
                 
 
 
-//             echo "</tr>";
+            echo "</tr>";
 
 
-//         while($row = $result->fetch_assoc()){
-//             echo "<tr>";
-//                 echo "<td>" . $row['user_id'] . "</td>";
-//                 echo "<td>" . $row['movie_name'] . "</td>";
-//                 echo "<td>" . $row['movie_rating'] . "</td>";
+        while($row = $result->fetch_assoc()){
+            echo "<tr>";
+                echo "<td>" . $row['cust_id'] . "</td>";
+                echo "<td>" . $row['place_name'] . "</td>";
+                echo "<td>" . $row['place_rating'] . "</td>";
 
                 
                 
                 
                
-//             echo "</tr>";
-//         }
-//     echo "</table>";
+            echo "</tr>";
+        }
+    echo "</table>";
     
-//     }
-//     else{
-//      echo "No records matching your query were found.";   
-//     }
+    }
+    else{
+     echo "Not rated yet";   
+    }
 
-//     }
+    }
   
-// echo "</center>";
+echo "</center>";
       
             ?>
 
