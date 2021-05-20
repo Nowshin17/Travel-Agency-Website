@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>REcommendatiin</title>
+  <title>Recommendatiin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .error {
@@ -52,20 +52,20 @@ include("recommend.php");
 
 
 
-$movies=mysqli_query($conn,"select * from user_movies");
+$movies=mysqli_query($conn,"select * from user_rating");
 
 $matrix=array();
 
 while($movie=mysqli_fetch_array($movies))
 {
 
-	$users=mysqli_query($conn,"select name from user1 where id=$movie[user_id]");
+	$users=mysqli_query($conn,"select name from customer where cust_id=$movie[cust_id]");
 	$username=mysqli_fetch_array($users);
 
-	$matrix[$username['name']][$movie['movie_name']]=$movie['movie_rating'];
+	$matrix[$username['cust_name']][$movie['place_name']]=$movie['place_rating'];
 }
 
-$users=mysqli_query($conn,"select name from user1 where id=$_GET[id]");
+$users=mysqli_query($conn,"select name from customer where cust_id=$_GET[id]");
 	$username=mysqli_fetch_array($users);
 
 // echo "<pre>";
@@ -86,19 +86,19 @@ $users=mysqli_query($conn,"select name from user1 where id=$_GET[id]");
 
 
  echo "<br><br><center>";
-            echo "<h2>Show movies recommebdation</h2>";
+            echo "<h2>Show place recommebdation</h2>";
 
             echo "<table>";
 
                     echo "<tr>";
-                           echo "<th>movie name </th>";
+                           echo "<th>recommended places </th>";
                            echo "<th>rating </th>";
                     echo "</tr>";
 
 
 
             $rec = array();
-            $rec = getRcommendation($matrix,$username['name']);
+            $rec = getRcommendation($matrix,$username['cust_name']);
             foreach ($rec as $movie => $rating) {
       
                         echo "<tr>";
