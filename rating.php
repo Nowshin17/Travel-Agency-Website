@@ -170,12 +170,17 @@ if($result = $conn->query($sql)){
     }
 
     }
+
+    
   
 echo "</center>";
       
             ?>
 
-
+<br><br>
+<center>
+<div class="button_div"><a href="visit_place.php" class="button">Go to User Profile</a></div>
+</center>
 
 
 
