@@ -15,6 +15,7 @@
 </head>
 
 <body class="adlog">
+  
     <form action="admin.php" method="post">
     <?php $err=" "; ?>
 
