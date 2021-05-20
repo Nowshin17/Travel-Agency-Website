@@ -122,6 +122,11 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
            
             ?>
 
+<center>
+        <a href="visit_place.php"><h3>Go to User Profile</h3></a>
+        </center>
+ 
+
             <br><br>
 
 
