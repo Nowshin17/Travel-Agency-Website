@@ -10,8 +10,8 @@
    
    $login_session = $row['cust_name'];
    
-   if(!isset($_SESSION['login_user'])){
-      header("location: login.php");
-      die();
-   }
+   // if(!isset($_SESSION['login_user'])){
+   //    header("location: login.php");
+   //    die();
+   // }
 ?>
