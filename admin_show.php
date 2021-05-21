@@ -2,6 +2,7 @@
 <html>
 <?php
     include('connection.php');
+   
      ?>
 
 <head>
@@ -93,6 +94,8 @@
             echo $admin_name= "ankita" ;
             
             ?>
+
+
 
 </center>
  <br>
