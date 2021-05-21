@@ -16,6 +16,29 @@
             line-height: 26px;
             padding: 30px;
             }
+
+
+
+            tr:(n+1){
+	margin: 0;
+}
+table{
+	border: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+tr, td{
+	border: 0px;
+}
+
+td:first-child{
+	text-align: left;
+}
+tr:nth-of-type(2n){
+	background-color: #bcbcbc;
+	
+}
     </style>
 </head>
 <body>
