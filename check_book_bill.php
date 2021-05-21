@@ -50,7 +50,34 @@ session_start();
 
 
 $customer_id = $_SESSION['id'];
+
 ?>
+
+<table class="table table-border">
+        
+        <?php
+                $sql = "SELECT cust_name,cust_id FROM customer WHERE cust_id = '$customer_id'";
+                
+                $result = $conn->query($sql);
+                if($result->num_rows>0)
+                {
+                    while($row = $result->fetch_assoc())
+                    {
+            ?>
+        <tr>
+            <h4>User ID: <b> <?php echo $row['cust_id']; ?> </b></h4>  
+            <h4>User Name: <b> <?php echo $row['cust_name']; ?> </b></h4>     
+        </tr>
+        <?php } }
+        ?>
+        
+    </table>
+
+
+
+
+
+    
     <h1>User Booking and Bill Details</h1>
     <style>
         table {
