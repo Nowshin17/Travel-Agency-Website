@@ -55,7 +55,13 @@
 
 <body>
 
+<?php
 
+session_start();
+
+$customer_id = $_SESSION['id'];
+
+?>
 <!--Header Area Start-->
 <header>
         <div class="container">
@@ -83,6 +89,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link get_started" href="log_out.php">Logout</a>
+                            
                         </li>
                         
 
@@ -101,8 +108,22 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="banner_content">
-                        <h1>User profile<br</h1> <h2><b>You are welcome to out Bangladesh</B></h2>
-                        
+                    <?php
+                    $sql = "SELECT cust_name,cust_id FROM customer WHERE cust_id = '$customer_id'";
+                            
+                            $result = $conn->query($sql);
+                            if($result->num_rows>0)
+                            {
+                                while($row = $result->fetch_assoc())
+                                {
+                        ?>
+                            <h1> Hello, <?php echo $row['cust_name']; ?> </h1>    
+                
+        
+                            <?php } }
+                            ?>
+                            <h2><b>You are welcome to out Bangladesh</B></h2>
+                                            
 
                     </div>
                 </div>
@@ -125,10 +146,17 @@
             
         </div>
     </div>
-    <br>
+    <br><br>
+
+    
+        
+    
+        
+   
      <center>
      <h2>Choose Your Favorite place and Book now! </h2> 
      </center>
+     <br>
 
     <table class="table table-border">
         <tr>
