@@ -52,7 +52,7 @@
                             <a class="nav-link" href="delete_customer.php">Delete User</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="add_place.php">booking details</a>
+                            <a class="nav-link" href="admin_show_booking.php">booking details</a>
                         </li>
 
                        
