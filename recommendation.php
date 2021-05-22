@@ -39,10 +39,8 @@ label{
 }
 </style>
 </head>
+
 <body>
-
-
-
 
 
 
@@ -86,22 +84,29 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
  // similarity of alice with other
 // getRcommendation($matrix,'alice');
 
+          
+          $sql="SELECT cust_id FROM user_rating where cust_id = $customer_id;" ;
+          if($result = $conn->query($sql)){
+            if($result->num_rows > 0){
 
 
-
- echo "<br><br><center>";
+            echo "<br><br><center>";
             echo "<h2>Show place recommebdation</h2>";
 
             echo "<table>";
 
                     echo "<tr>";
                            echo "<th>recommended places </th>";
-                           echo "<th>rating </th>";
+                           echo "<th>rated </th>";
                     echo "</tr>";
 
 
 
             $rec = array();
+
+
+            
+           
             $rec = getRcommendation($matrix,$username['cust_name']);
             foreach ($rec as $movie => $rating) {
       
@@ -111,31 +116,37 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
   						 echo "</tr>";
                     }
                 echo "</table>";
+
+                  } 
                 
                 
-                
- 
-                
-              
+                  else{
+
+                  
+                    echo "<center><h2>Please Rate your favorite place first!<h2></center>";
+                    echo "<br><br><center>";
+                     echo "<h2>Show place recommebdation</h2>";
+
+                    echo "<table>";
+
+                    echo "<tr>";
+                           echo "<th>recommended places </th>";
+                           echo "<th>rated </th>";
+                    echo "</tr>";
+                    echo "<tr>";
+                           echo "<th>bandarban </th>";
+                           echo "<th>-</th>";
+                    echo "</tr>";
+                  }
+                }
+                 
+                  
+
+                 
+    
             echo "</center>";
 
-           
             ?>
 
-<center>
-        <a href="visit_place.php"><h3>Go to User Profile</h3></a>
-        </center>
- 
-
-            <br><br>
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+ </body> 
+ </html>       
