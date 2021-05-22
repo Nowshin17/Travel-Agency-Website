@@ -68,7 +68,7 @@ include('connection.php');
                   echo "New record created successfully<br>";       
                    }
                 
-               header("Location: visit_place.php") ;
+               header("Location: customer_log.php") ;
     
                }
              else
