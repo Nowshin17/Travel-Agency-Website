@@ -10,7 +10,7 @@ body{
 
 
 .form-container{
-	width: 250;
+	width: 50%;
 	height: auto;
 	padding: 40px 80px;
 	
@@ -33,13 +33,9 @@ h2{
 	font-family: Arial, Helvetica, sans-serif;
 	
      color:#323146;
-	
-	
-	
+
 	text-shadow:3px 3px #A6C9CE;
 
-
-	
 	font-size: 60px;
 	font-weight: 700;
 	padding:30px;
@@ -48,7 +44,6 @@ h2{
 .user-img{
 background: url('g') no-repeat;
 }
-
 
 
 ul.list{
