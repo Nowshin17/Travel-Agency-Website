@@ -6,8 +6,6 @@ include('connection.php');
 
 <head>
 
-
-
     <meta charset="UTF-8">
     <title>login</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
