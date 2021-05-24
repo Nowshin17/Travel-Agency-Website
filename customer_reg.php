@@ -24,6 +24,7 @@ include('connection.php');
 </head>
 
 <body>
+
     <?php
     $cust_name=$cust_email=$cust_password=$cust_address=$cust_phonel="";
     $bad=$clear="";
@@ -123,6 +124,10 @@ include('connection.php');
 
     
 
+<h2>We are here for you</h2>
+<br>
+<br>
+<br>
 
 <dir class= "form-container">
 	<div class = "user-img"> <img src= ""/> <div>
@@ -132,25 +137,25 @@ include('connection.php');
 
     
 
-    <li><input type="text" id="login" class="fadeIn second" name="cust_name" placeholder="Name"></BR>
-    <span class = "error"><?php echo "$namerr"; ?></span></li>
-    <li><input type="text" id="login" class="fadeIn second" name="cust_address" placeholder="Address"></BR>
-    <span class = "error"><?php echo "$adderr"; ?></span></li>
-    <li><input type="text" id="login" class="fadeIn second" name="cust_phone" placeholder="Phone"></BR>
-    <span class = "error"><?php echo "$noerr"; ?></span></li>
-    <li><input type="email" id="login" class="fadeIn second" name="cust_mail" placeholder="Email"></BR>
-    <span class = "error"><?php echo "$emailerr"; ?></span></li>
+                    <li><input type="text" id="login" class="fadeIn second" name="cust_name" placeholder="Name"></BR>
+                    <span class = "error"><?php echo "$namerr"; ?></span></li>
+                    <li><input type="text" id="login" class="fadeIn second" name="cust_address" placeholder="Address"></BR>
+                    <span class = "error"><?php echo "$adderr"; ?></span></li>
+                    <li><input type="text" id="login" class="fadeIn second" name="cust_phone" placeholder="Phone"></BR>
+                    <span class = "error"><?php echo "$noerr"; ?></span></li>
+                    <li><input type="email" id="login" class="fadeIn second" name="cust_mail" placeholder="Email"></BR>
+                    <span class = "error"><?php echo "$emailerr"; ?></span></li>
 
-    <li><input type="password" id="password" class="fadeIn third" name="cust_password" placeholder="Password">
-    </BR>
-    <span class = "error"><?php echo "$passworderr"; ?></span></li>
-
-
-    <li><input type="submit" class="fadeIn fourth" name="submit" value="Sign In">
+                    <li><input type="password" id="password" class="fadeIn third" name="cust_password" placeholder="Password">
+                    </BR>
+                    <span class = "error"><?php echo "$passworderr"; ?></span></li>
 
 
-    <li><p>Already have an Account?<a href="customer_log.php"> Log In</a></p></li>
-        
+                    <li><input type="submit" class="fadeIn fourth" name="submit" value="Sign In">
+
+
+                    <li><p>Already have an Account?<a href="customer_log.php"> Log In</a></p></li>
+                        
 
 
 
