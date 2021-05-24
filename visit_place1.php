@@ -16,31 +16,26 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--Media CSS-->
+    <link rel="stylesheet" href="css/new.css">
+  
     <link rel="stylesheet" href="assets/css/media.css">
+
     <link rel="stylesheet" href="stylec.css" />
 
 
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        table,
-        th,
-        td {
-            border: 5px solid black;
-        }
-      
-}
-    </style>
+>
 </head>
 
 <body>
 
+<div class="container">
 
+        <div class="row mb-2">
+            
 
 <?php
+
+
 $sql = "SELECT * FROM place";
         $result = $conn->query($sql);
         //print_r($result);
@@ -48,32 +43,48 @@ $sql = "SELECT * FROM place";
         while($row = $result->fetch_assoc()) {
             //print_r($row);
             ?>
-    <div class="grid">
-    
-      <div class="grid-item">
-        <div class="card">
-          <img class="card-img" src="image/<?php echo $row['place_img']; ?>" alt="Rome" />
-          <div class="card-content">
-            <h1 class="card-header"><?php echo $row['place_name']; ?></h1>
-            <p class="card-text">
-              Rome is known for its stunning <strong> architecture</strong>,
-              with the Colleseum, Pantheon, and Trevi Fountain as the main
-              attractions.
-            </p>
-            <button class="card-btn">Visit <span>&rarr;</span></button>
-          </div>
-        </div>
-      </div>
+ 
+
+
+      <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h1 class="mb-0">
+                        <?php echo $row['place_name']; ?>
+                        </h1>
+
+                        
+
+                        <p class="card-text mb-auto">Visit here</p>
+
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: 200px;" src="image/<?php echo $row['place_img']; ?>" data-holder-rendered="true">
+                </div>
+            </div>
+     
+
+     
+
+
 
       <?php
             
         }
+        
      }
+    
         ?>
+
+        </div>
+    </div>
 
     <center>
         <a href="index.php"><h4>Go to HOME</h4></a>
     </center>
+
+
+
+  
 </body>
 
 </html>
