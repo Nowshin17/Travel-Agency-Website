@@ -15,6 +15,36 @@ session_start();
 </head>
 
 <body class="user">
+<?php
+$err="";
+
+if(isset($_POST['add']))
+{   
+    $customer_password = $_POST['cust_password'];
+    $customer_mail = $_POST['cust_mail'];
+    
+    $sql = "SELECT * FROM customer WHERE cust_mail = '$customer_mail' AND cust_password ='$customer_password'";
+    $result = $conn->query($sql);
+    if($result->num_rows!=0)
+    {
+        $sql_1 = "SELECT cust_id from customer WHERE cust_mail = '$customer_mail' AND cust_password = '$customer_password'";
+        
+        $result_1 = $conn->query($sql_1);
+        
+        $row = $result_1->fetch_assoc();
+        $_SESSION["id"] = $row['cust_id'];
+        header("Location: visit_place.php") ;
+    }
+    else
+    {
+        $err = " Your Email or Password is Incorrect!";
+    }
+}
+?>
+
+
+
+
     <form action="customer_log.php" method="post">
 
         <div class="wrapper fadeInDown pad">
@@ -32,6 +62,10 @@ session_start();
                     <input type="email" id="login" class="fadeIn second" name="cust_mail" placeholder="Email">
                     <input type="password" id="password" class="fadeIn third" name="cust_password" placeholder="Password">
                     <input type="submit" class="fadeIn fourth" name="add" value="Log In">
+
+                    <p>Do not have any Account? <a href="customer_reg.php"> Sign up</a></p>
+                    <span class = "error"><?php echo "$err"; ?></span>
+                    <br>
                 
 
 
@@ -39,30 +73,7 @@ session_start();
         </div>
 
     </form>
-    <?php
-        if(isset($_POST['add']))
-        {   
-            $customer_password = $_POST['cust_password'];
-            $customer_mail = $_POST['cust_mail'];
-            
-            $sql = "SELECT * FROM customer WHERE cust_mail = '$customer_mail' AND cust_password ='$customer_password'";
-            $result = $conn->query($sql);
-            if($result->num_rows!=0)
-            {
-                $sql_1 = "SELECT cust_id from customer WHERE cust_mail = '$customer_mail' AND cust_password = '$customer_password'";
-                
-                $result_1 = $conn->query($sql_1);
-                
-                $row = $result_1->fetch_assoc();
-                $_SESSION["id"] = $row['cust_id'];
-                header("Location: visit_place.php") ;
-            }
-            else
-            {
-                echo "Please register<br>";
-            }
-        }
-        ?>
+   
 </body>
 
 </html>
