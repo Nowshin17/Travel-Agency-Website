@@ -29,7 +29,9 @@
 
 <body>
     
-
+<?php
+    include('header.php');
+     ?>
 
     <h1 style="text-align:center;">Our Available Hotels</h1>
 
@@ -87,7 +89,9 @@
     </div>
 
 
-
+    <?php
+    include('footer.php');
+     ?>
 
 
 </body>
