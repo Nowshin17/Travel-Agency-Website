@@ -1,13 +1,5 @@
 *{margin: 0 ; padding: 0}
 
-
-/*body{
-	
-	background: url("https://cdn.pixabay.com/photo/2016/01/19/15/05/doctor-1149149__340.jpg")no-repeat; background-size: 100%;
-	padding-top: 10vh; */
-
-
-
 body{
 	padding-top: 50px;
 	
@@ -16,11 +8,6 @@ body{
 
 }
 
- /*body{
-
- 	background: url("https://cdn.pixabay.com/photo/2016/01/19/15/05/doctor-1149149__340.jpg")no-repeat; background-size: 100%;
-	
- }*/
 
 .form-container{
 	width: 250;
