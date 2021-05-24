@@ -92,7 +92,8 @@ include('connection.php');
                 $customer_mail = $_POST['cust_mail'];
                 
                 $sql_1 = "SELECT * FROM customer WHERE cust_mail = '$customer_mail'";
-                $result = $conn->query($sql_1);
+                // if $sql_1 get value it will return some value
+                $result = $conn->query($sql_1); 
                 
                 if($result->num_rows==0)
                 {
