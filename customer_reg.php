@@ -83,34 +83,34 @@ include('connection.php');
 
 
         if (empty($_POST["customer_mail"])){
-            $emailerr = "address is required";
+            $emailerr = "Email is required";
         }
         else{
           
 
-        $customer_mail = $_POST['cust_mail'];
-        
-        $sql_1 = "SELECT * FROM customer WHERE cust_mail = '$customer_mail'";
-        $result = $conn->query($sql_1);
-        
-        if($result->num_rows==0)
-        {
-         
-             $sql = "INSERT INTO customer(cust_name,cust_password,cust_address,cust_mail,cust_phone) VALUES ('$customer_name','$customer_password','$customer_address','$customer_mail','$customer_phone')";
-        
-            if ($conn->query($sql) == TRUE) {
-                echo "New record created successfully<br>";       
-               }
-            
-                header("Location: customer_log.php") ;
+                $customer_mail = $_POST['cust_mail'];
+                
+                $sql_1 = "SELECT * FROM customer WHERE cust_mail = '$customer_mail'";
+                $result = $conn->query($sql_1);
+                
+                if($result->num_rows==0)
+                {
+                
+                    $sql = "INSERT INTO customer(cust_name,cust_password,cust_address,cust_mail,cust_phone) VALUES ('$customer_name','$customer_password','$customer_address','$customer_mail','$customer_phone')";
+                
+                    if ($conn->query($sql) == TRUE) {
+                        echo "New record created successfully<br>";       
+                    }
+                    
+                        header("Location: customer_log.php") ;
 
-           }
+                }
 
 
-         else
-         {
-            echo "This mail is already taken<br>";
-         }
+                else
+                {
+                    echo "This mail is already taken<br>";
+                }
      }
 
 
