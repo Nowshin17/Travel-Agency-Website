@@ -31,11 +31,13 @@
         td {
             border: 5px solid black;
         }
-
+      
+}
     </style>
 </head>
 
 <body>
+
 
 
 <?php
