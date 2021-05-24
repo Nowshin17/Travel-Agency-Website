@@ -46,13 +46,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="visit_place1.php">Place</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="hotel.php">Hotel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customer_log.php">Book Now</a>
                         </li>
 
                         <li class="nav-item">
