@@ -56,6 +56,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="hotel.php">Hotel</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customer_log.php">Booking</a>
+                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link get_started" href="customer_log.php">Log In</a>
