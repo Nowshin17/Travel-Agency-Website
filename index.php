@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Media CSS-->
     <link rel="stylesheet" href="assets/css/media.css">
+
+    <style>
+.footer {
+  
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color: #5b5b5b;
+   color: white;
+   text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -200,7 +212,11 @@
 
 <!-- footet -->
 
+<?php
+    include('footer.php');
+     ?>
 
+<!-- footer section -->
 
 
 </body>
