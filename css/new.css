@@ -17,7 +17,7 @@ body {
 
 .user {
 
-    background-image: url(../Image/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg.jpg);
+    background-image: url(../Image/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg);
     background-position: center;
     background-position-y: -350px;
 
@@ -250,7 +250,7 @@ input[type=text]:placeholder {
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
-.fadeInDown {
+/* .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
     -webkit-animation-duration: 2s;
@@ -285,10 +285,10 @@ input[type=text]:placeholder {
         -webkit-transform: none;
         transform: none;
     }
-}
+} */
 
 /* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn {
+/* @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -355,10 +355,10 @@ input[type=text]:placeholder {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s;
-}
+} */
 
 /* Simple CSS3 Fade-in Animation */
-.underlineHover:after {
+/* .underlineHover:after {
     display: block;
     left: 0;
     bottom: -10px;
@@ -375,16 +375,16 @@ input[type=text]:placeholder {
 
 .underlineHover:hover:after {
     width: 100%;
-}
+} */
 
 
 
 /* OTHERS */
 
-*:focus {
+/* *:focus {
     outline: none;
 }
 
 #icon {
     width: 60%;
-}
+} */
