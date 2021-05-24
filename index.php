@@ -16,20 +16,11 @@
     <!--Media CSS-->
     <link rel="stylesheet" href="assets/css/media.css">
 
-    <style>
-.footer {
-  
-   left: 0;
-   top: 0;
-   width: 100%;
-   background-color: #5b5b5b;
-   color: white;
-   text-align: center;
-}
-</style>
+ 
 </head>
 
 <body>
+
 
     <!--Header Area Start-->
     <header>
@@ -99,7 +90,9 @@
 
 
 
-    <!-- <marquee>TravelBD</marquee> -->
+    <!-- <marquee><b><div style="color:#6eef83;"><div  style="font-size:140%;">TravelBD You can search places. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</div></div> </b></marquee> -->
+   
+
     <!--Features Area Start-->
     <section class="features">
         <div class="container">
@@ -175,7 +168,7 @@
         </div>
 
 
-
+<br><br>
         
     </section>
     <!--Perfect Template Area End-->
@@ -184,6 +177,24 @@
 
 
 
+
+    <!--Banner Area Start-->
+    <section class="banner d-flex align-items-center" style="background-image: url('Images/slide_2.jpg');  background-position-y: -100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="banner_content">
+                        <center>
+                        <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
+                        <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
+</center>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner Area End-->
 
 
    
