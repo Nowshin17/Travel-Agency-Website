@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Google Font CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Media CSS-->
