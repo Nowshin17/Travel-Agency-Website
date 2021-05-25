@@ -50,11 +50,11 @@ session_reset();
 </b></marquee>
 
 
-
+<!-- section -->
 <div style="text-align: center;">
     <h1>Our features</h1>
     
-    <p>We are here for you to discover the beautiful places of <b>Bangladesh</b></p>
+    <p><div style="color:#4f4f4f;">We are here for you to discover the beautiful places of </div><b>Bangladesh</b></p>
 </div>
 
 <div class="row">
@@ -81,17 +81,17 @@ session_reset();
     </div>
 </div>
 <br><br>
-
+<!-- section -->
 
 <div class="title" style="text-align: center;">
     <h1>Do You Want to know about Bangladesh?</h1>
-    <p>Please visit here</p>
+    <p><div style="color:#4f4f4f;">Please visit here</div></p>
 </div>
 
 <div class="row">
     <div class="column_2">
         <div style="text-align: center;">
-            <img style="height: 100%; width: 100%;" src="Image/man-standing-on-a-rock-1271619.jpg" alt="image error">
+            <img style="height: 100%; width: 100%;" src="image/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg" alt="image error">
         </div>
     </div>
     <div class="column_2">
@@ -109,30 +109,52 @@ session_reset();
 </div>
 
 
+<img src="Images/img_bg_4.jpg" height="500" alt="Snow" style="width:100%;">          
+
 <div class="row">
+
+
+<div class="column_3">
+            <a target="_blank" href="visit_place1.php">
+             <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
+            </a>
+            <div style="text-align: center;" ><b>You can search Places</b><br>Lorem Ipsum is simply dummy
+             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>>
+    </div>
+
+    
     <div class="column_3">
-            <a target="_blank" href="img_5terre.jpg">
+            <a target="_blank" href="hotel.php">
+                <img src="images/hotel-3.jpg" alt="Northern Lights" width="100%" height="100%">
+            </a>
+            <div style="text-align: center;" ><b>You can view hotels</b><br>Lorem Ipsum is simply dummy
+             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
+    </div>
+
+    <div class="column_3">
+            <a target="_blank" href="customer_log.php">
                 <img src="images/hotel-1.jpg" alt="Cinque Terre" width="100%" height="100%">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div style="text-align: center;" ><b>You can book a Trip!!</b><br>Lorem Ipsum is simply dummy
+             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
     </div>
-    <div class="column_3">
-            <a target="_blank" href="img_lights.jpg">
-                <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-    </div>
-    <div class="column_3">
-            <a target="_blank" href="img_mountains.jpg">
-                <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-    </div>
+
+    
+    
+
+   
 </div>
    
 
 <br><br>
 
+<!-- footet -->
+
+<?php
+    include('footer.php');
+     ?>
+
+<!-- footer section -->
 </body>
 
 </html>
