@@ -8,39 +8,38 @@
     <meta charset="utf-8">
     <title>travelBD</title>
     <link rel="icon" href="Image/logo.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--Google Font CSS-->
+    
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- cdn boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--Media CSS-->
-    <link rel="stylesheet" href="assets/css/media.css">
-
  
     <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 100px;
-  height: auto;
-}
+            div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 100px;
+            height: auto;
+            }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+            div.gallery:hover {
+            border: 1px solid #777;
+            }
 
-div.gallery img {
-  width: 100%;
-  height: 50%;
-}
+            div.gallery img {
+            width: 100%;
+            height: 50%;
+            }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            }
 </style>
 </head>
 
@@ -213,7 +212,7 @@ session_reset();
                         <center>
                         <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
                         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
-</center>
+                        </center>
 
                     </div>
                 </div>
