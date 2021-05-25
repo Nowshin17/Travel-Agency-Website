@@ -10,6 +10,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <title>Find you trip!</title>
+    <link rel="icon" href="Image/logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Google Font CSS-->
