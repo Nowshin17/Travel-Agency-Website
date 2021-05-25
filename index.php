@@ -17,11 +17,34 @@
     <link rel="stylesheet" href="assets/css/media.css">
 
  
+    <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100px;
+  height: auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 50%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
 
-
+session_reset(); 
     <!--Header Area Start-->
     <header>
         <div class="container">
@@ -197,6 +220,66 @@
     <!--Banner Area End-->
 
 
+
+      <!--Perfect Template Area Start-->
+      <section class="perfect">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title">
+                        <h1>Do You Want to know about Bangladesh?</h1>
+                        <p>Please visit here</p>
+                    </div>
+                </div>
+
+
+                        <div class="gallery">
+                            
+                            <a target="_blank" href="img_5terre.jpg">
+                                <img src="images/hotel-1.jpg" alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                            </div>
+
+                            
+
+                            <div class="gallery">
+                            <a target="_blank" href="img_lights.jpg">
+                                <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                            </div>
+
+                            <div class="gallery">
+                            <a target="_blank" href="img_mountains.jpg">
+                                <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                            </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<br><br>
+        
+    </section>
+    <!--Perfect Template Area End-->
+
+
+                    
+
+<br><br>
+
+
+
    
 
 
@@ -224,8 +307,9 @@
     <!--Call to Action Area End-->
 
 
+   
 
-
+<br><br>
 <!-- footet -->
 
 <?php
