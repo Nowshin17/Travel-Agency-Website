@@ -20,38 +20,29 @@
 
 
     <style>
+            *{
+             margin: 0%;
+             }
 
-            body {
+            body{
             background: #eee;
             font-family: 'Lato', sans-serif;
             font-weight: 400;
             color: #222;
             font-size: 14px;
-            line-height: 26px;
-            padding: 30px;
-            }
 
-            .grid {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            
-            }
+        }
+            .a {
+    
+            line-height: 26px;
+            padding: 10px;
+            margin: 120px;
+            } 
 
             img:hover {
             opacity: 0.5;
             }
 
-            div.polaroid {
-            width: 250px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            text-align: center;
-            padding:10px;
-            }
-
-
-            div.container1 {
-            padding: 10px;
-            }
 
             div.card {
                 /* Add shadows to create the "card" effect */
@@ -82,13 +73,26 @@
                 display: table;
                 clear: both;
             }
+            
 }
 </style>
 </head>
-
+<?php
+    include('header.php');
+     ?>
+ 
 <body>
+   
+
+<div class="a"> 
+       
 <div class="row">
-            
+
+    <center>
+    <h1 style="color: #274A5E;"><b> Find your place<b></h1>
+    </center>
+    <br>
+      
 <?php
 
 
@@ -105,7 +109,7 @@ $sql = "SELECT * FROM place";
                         <img src="image/<?php echo $row['place_img']; ?>" height="200" width="230">
         
                         <div class="container">
-                            <p><?php echo $row['place_name']; ?></p>
+                            <p><b><?php echo $row['place_name']; ?></b></p><br>
                         </div>
                     </div>
                 </div>
@@ -119,17 +123,21 @@ $sql = "SELECT * FROM place";
      }
     
         ?>
+        </div>
 
 </div>
 
-
-    <center>
-        <a href="index.php"><h4>Go to HOME</h4></a>
-    </center>
+    
 
 
 
+<!-- footet -->
 
+<?php
+    include('footer.php');
+     ?>
+
+<!-- footer section -->
 
   
 </body>
