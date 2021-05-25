@@ -1,8 +1,5 @@
 <!doctype html>
 <html lang="en">
-<?php
-    include('connection.php');
-     ?>
 
 <head>
     <meta charset="utf-8">
@@ -11,42 +8,16 @@
     
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-    <!-- cdn boostrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="nav_css.css">
  
-    <style>
-            div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 100px;
-            height: auto;
-            }
-
-            div.gallery:hover {
-            border: 1px solid #777;
-            }
-
-            div.gallery img {
-            width: 100%;
-            height: 50%;
-            }
-
-            div.desc {
-            padding: 15px;
-            text-align: center;
-            }
-</style>
 </head>
 
 <body>
 <?php
 session_reset(); 
 ?>
+
     <!--Header Area Start-->
     <header>
         <div class="container">
