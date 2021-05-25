@@ -28,12 +28,10 @@
             font-size: 17px;
         }
         
-       
-
         body {
             
             font-family: 'Lato', sans-serif;
-   }
+        }
         .topnav a:hover {
             background-color: gray;
             color: black;
@@ -42,6 +40,9 @@
         .topnav a.active {
             background-color: #04AA6D;
             color: white;
+        }
+        logo{
+            padding-left:20px;
         }
 
       
