@@ -14,7 +14,7 @@
     <!-- cdn boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
  
@@ -63,29 +63,30 @@ session_reset();
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="visit_place1.php">Place</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hotel.php">Hotel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="customer_log.php">Booking</a>
-                        </li>
+                    
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="visit_place1.php">Place</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hotel.php">Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="customer_log.php">Booking</a>
+                            </li>
 
 
-                        <li class="nav-item">
-                            <a class="nav-link get_started" href="customer_log.php">Log In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link get_started" href="customer_reg.php">Sign Up</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link get_started" href="admin.php">Admin</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link get_started" href="customer_log.php">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link get_started" href="customer_reg.php">Sign Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link get_started" href="admin.php">Admin</a>
+                            </li>
 
                     </ul>
                 </div>
@@ -212,7 +213,7 @@ session_reset();
                         <center>
                         <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
                         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
-                        </center>
+</center>
 
                     </div>
                 </div>
