@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
+<?php
+    include('connection.php');
+     ?>
 
 <head>
-    <meta charset="utf-8">
-    <title>travelBD</title>
-    <link rel="icon" href="Image/logo.png">
-    
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
+            <meta charset="utf-8">
+            <title>travelBD</title>
+            <link rel="icon" href="Image/logo.png">
+            
+            <!-- font -->
+            <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
 
-    <link rel="stylesheet" href="nav_css.css">
+            <link rel="stylesheet" href="nav_css.css">
  
 </head>
 
@@ -29,10 +32,12 @@ session_reset();
     <a href="admin.php">Admin</a>
 </div>
 
+
+
 <div class="container">
     <img src="Images/slide_2.jpg" height="500" alt="Snow" style="width:100%;">
     <div class="centered" style="color: white;">
-        <h1>Welcome to <br><b><div><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
+        <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
     </div>
 </div>
