@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
+<?php
+    include('connection.php');
+     ?>
 
 <head>
-    
     <meta charset="utf-8">
     <title>travelBD</title>
     <link rel="icon" href="Image/logo.png">
@@ -43,8 +45,9 @@ div.desc {
 </head>
 
 <body>
-
+<?php
 session_reset(); 
+?>
     <!--Header Area Start-->
     <header>
         <div class="container">
