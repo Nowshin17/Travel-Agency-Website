@@ -45,7 +45,7 @@ $customer_id = $_SESSION['id'];
     <a class="logo" href="#"><div style="color:#274A5E;">TravelBD</div></a>
     <a class="nav-link" href="#">User Profile</a>
     <a class="nav-link" href="check_book_bill.php">Check bookings and Bills</a>
-    <a href="hotel.php">Hotel</a>
+   
     <a class="nav-link" href="rating.php">Rate the place</a>
     <a class="nav-link" href="recommendation.php">Your Recommended places</a>
     <a class="nav-link get_started" href="log_out.php">Logout</a>
@@ -132,7 +132,13 @@ $customer_id = $_SESSION['id'];
     </center>
     <br><br>
 
+<!-- footet -->
 
+<?php
+    include('footer.php');
+     ?>
+
+<!-- footer section -->
 </body>
 
 </html>
