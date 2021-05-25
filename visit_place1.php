@@ -16,22 +16,48 @@
     <!--Google Font CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
     <!--Custom CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="css/new.css">
+ 
+
+
+    <style>
+
+body {
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
   
-    <link rel="stylesheet" href="assets/css/media.css">
+}
 
-    <link rel="stylesheet" href="stylec.css" />
+img:hover {
+  opacity: 0.5;
+}
 
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding:10px;
+}
 
->
+div.container {
+  padding: 10px;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-        <div class="row mb-2">
+        <div class="row mb-3">
             
 
 <?php
@@ -44,27 +70,16 @@ $sql = "SELECT * FROM place";
         while($row = $result->fetch_assoc()) {
             //print_r($row);
             ?>
+                 <div class="grid">
  
-
-
-      <div class="col-md-6">
-                <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                    <div class="card-body d-flex flex-column align-items-start">
-                        <h1 class="mb-0">
-                        <?php echo $row['place_name']; ?>
-                        </h1>
-
-                        
-
-                        <p class="card-text mb-auto">Visit here</p>
-
-                    </div>
-                    <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: 200px;" src="image/<?php echo $row['place_img']; ?>" data-holder-rendered="true">
+                <div class="polaroid">
+                <img src="image/<?php echo $row['place_img']; ?>" height="200" width="230">
+                <div class="container">
+                    <p><?php echo $row['place_name']; ?></p>
                 </div>
-            </div>
-     
+                </div>
 
-     
+                </div>
 
 
 
@@ -82,6 +97,8 @@ $sql = "SELECT * FROM place";
     <center>
         <a href="index.php"><h4>Go to HOME</h4></a>
     </center>
+
+
 
 
 
