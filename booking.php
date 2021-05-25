@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 
 
-
 <head>
     <meta charset="UTF-8">
     <title>Booking</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   
     <style> 
             body {
@@ -15,7 +13,7 @@
             color: #222;
             font-size: 14px;
             line-height: 26px;
-            padding: 30px;
+           
             }
                 
     </style>
@@ -23,6 +21,7 @@
 
 
 <?php
+
 
 include('connection.php');
 
@@ -37,13 +36,7 @@ $customer_id = $_SESSION['id'];
 ?>
 
 
-<html>
-    <h1>Booking Form</h1>
 
-<head>
-
-    <meta charset="UTF-8">
-    <title>Document</title>
   
 
  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -52,9 +45,8 @@ $customer_id = $_SESSION['id'];
 
 
 
-</head>
-
 <body>
+<h1>Booking Form</h1>
 
 
     <form action="" method="post" >
