@@ -81,3 +81,24 @@
   /* .row.img:hover {
     opacity: 0.3;
     } */
+
+
+  
+
+  .button_div {
+      text-align: center;
+  }
+
+
+  table {
+      border-collapse: collapse;
+     
+      
+  }
+
+  table,
+  th,
+  td {
+      border: 1px solid black;
+      padding:20px;
+  }
