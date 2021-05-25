@@ -42,6 +42,8 @@ tr:nth-of-type(2n){
     </style>
 </head>
 <body>
+
+
     <?php
 
 include('connection.php');
