@@ -11,45 +11,41 @@
     <meta charset="utf-8">
     <title>Find you trip!</title>
     <link rel="icon" href="Image/logo.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Google Font CSS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-    <!--Custom CSS-->
- 
-
+   
 
     <style>
 
-body {
-  background: #eee;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #222;
-  font-size: 14px;
-  line-height: 26px;
-  padding: 30px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  
-}
+        body {
+        background: #eee;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #222;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 30px;
+        }
+        .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+        }
 
-img:hover {
-  opacity: 0.5;
-}
+        img:hover {
+        opacity: 0.5;
+        }
 
-div.polaroid {
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  padding:10px;
-}
+        div.polaroid {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        padding:10px;
+        }
 
-div.container {
-  padding: 10px;
-}
+        div.container {
+        padding: 10px;
+        }
 </style>
 </head>
 
