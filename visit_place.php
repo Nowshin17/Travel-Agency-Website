@@ -5,53 +5,30 @@
      ?>
 
 
-
 <head>
-    <title></title>
+            <meta charset="utf-8">
+            <title>travelBD</title>
+            <link rel="icon" href="Image/logo.png">
+            <link rel="stylesheet" href="nav_css.css">
+      <style>
+          
+  table {
+      border-collapse: collapse;
+     
+      
+  }
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <title>Hello, world!</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--Google Font CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--Media CSS-->
-    <link rel="stylesheet" href="assets/css/media.css">
-
-    <style>
-        .button {
-            background-color: #555555;
-            border: black;
-            color: white;
-            padding: 15px 32px;
-            /*text-align: right;*/
-            text-decoration: underline;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .button_div {
-            text-align: center;
-        }
-
-
-        table {
-            border-collapse: collapse;
-        }
-
-        table,
-        th,
-        td {
-            border: 5px solid black;
-        }
-
-    </style>
+  table,
+  th,
+  td {
+      border: 1px solid black;
+      padding:20px;
+  }
+        </style>
+ 
 </head>
+
+
 
 <body>
 
@@ -62,53 +39,26 @@ session_start();
 $customer_id = $_SESSION['id'];
 
 ?>
-<!--Header Area Start-->
-<header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">
-                    <h3>TravelBD</h3>
-                </a>
-               
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">User Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="check_book_bill.php">Check bookings and Bills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="rating.php">Rate the place</a>
-                          
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="recommendation.php">Your Recommended places</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link get_started" href="log_out.php">Logout</a>
-                            
-                        </li>
-                        
-
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--Header Area End-->
+<!-- header -->
+<div class="topnav">
+    <a class="logo" href="#"><div style="color:#274A5E;">TravelBD</div></a>
+    <a class="nav-link" href="#">User Profile</a>
+    <a class="nav-link" href="check_book_bill.php">Check bookings and Bills</a>
+    <a href="hotel.php">Hotel</a>
+    <a class="nav-link" href="rating.php">Rate the place</a>
+    <a class="nav-link" href="recommendation.php">Your Recommended places</a>
+    <a class="nav-link get_started" href="log_out.php">Logout</a>
+    
+</div>
+<!-- header -->
 
 
-
-   <!--Banner Area Start-->
-   <section class="banner d-flex align-items-center" style="background-image: url('Images/img_bg_3.jpg');  background-position-y: -100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="banner_content">
-                    <?php
+<!-- background img -->
+<div class="container">
+    <img src="Images/img_bg_3.jpg" height="630" alt="Snow" style="width:100%;">
+    <div class="centered" style="color: white;">
+        <?php
                     $sql = "SELECT cust_name,cust_id FROM customer WHERE cust_id = '$customer_id'";
                             
                             $result = $conn->query($sql);
@@ -122,42 +72,23 @@ $customer_id = $_SESSION['id'];
         
                             <?php } }
                             ?>
-                            <h2><b>You are welcome to out Bangladesh</B></h2>
-                                            
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Banner Area End-->
-
-
-<div class="container">
-       
-   
-    <div class="col-sm-12">
-        <div class="title">
-
-        <!-- <div class="button_div"><a href="log_out.php" class="button">Log Out</a></div>
-        <div class="button_div"><a href="check_book_bill.php" class="button">Check Book and Bill</a></div> -->
-        
-    
-            
-        </div>
+                            <h2 style="color:#6eef83;"><b>You are welcome to Bangladesh</B></h2>
+                            <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
     </div>
+</div>
+
+
+
+  
     <br><br>
 
     
-        
-    
-        
-   
+  
      <center>
      <h2>Choose Your Favorite place and Book now! </h2> 
-     </center>
+     
      <br>
-
+    
     <table class="table table-border">
         <tr>
             <th>place_name</th>
@@ -191,15 +122,15 @@ $customer_id = $_SESSION['id'];
     </div>
 
   <br><br>
+    
+        <form action="rating.php">
 
-  <center>
-  <form action="rating.php">
+            <input type="submit" name="rating" value="Please rate your favorite place">
+                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
-  <input type="submit" name="rating" value="Please rate your favorite place">
-            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-
-</form>
+        </form>
     </center>
+    <br><br>
 
 
 </body>
