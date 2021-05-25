@@ -14,26 +14,35 @@
     <title>Hotel</title>
 
     <meta charset="utf-8">
-    <title>Hello, world!</title>
-    
+    <title>See hotels!</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="css/new.css">
-  
-    <link rel="stylesheet" href="assets/css/media.css">
+
+    <style>
+
+        body {
+        background: #eee;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #222;
+        font-size: 14px;
+        line-height: 26px;
+        
+        }
+    </style>
+   
 
 </head>
 
 <body>
     
 <?php
-    include('header.php');
+    
      ?>
 
     <h1 style="text-align:center;">Our Available Hotels</h1>
+    <hr>
 
     <div class="container">
 
@@ -42,10 +51,10 @@
             <?php
             $sql = "SELECT * FROM hotel";
             $result = $conn->query($sql);
-            //print_r($result);
+            
             if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-                //print_r($row);
+                
             ?>
 
 
@@ -87,6 +96,8 @@
         </a>
 
     </div>
+
+    
 
 
     <?php
