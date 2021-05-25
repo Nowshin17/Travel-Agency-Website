@@ -10,15 +10,22 @@
 
     <style>
       
-        .footer {
+  .footer {
   
-   left: 0;
+   float: left;
    bottom: 0;
    width: 100%;
    background-color: #5b5b5b;
    color: white;
-   text-align: center;
-   float: left;
+   
+   p{
+    float: left;
+    color:  #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+   }
 }
     </style>
 </head>
