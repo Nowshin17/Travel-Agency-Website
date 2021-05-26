@@ -10,11 +10,11 @@
         <link rel="icon" href="Image/logo.png">
         <link rel="stylesheet" href="nav_css.css">
         <style>
-           body{
-            background: #eee;
-            font-family: 'Lato', sans-serif;
-           
-           }
+           body
+           {
+                background: #eee;
+                font-family: 'Lato', sans-serif;
+            }
         </style>
  
 </head>
@@ -40,10 +40,13 @@
 <!-- background img -->
 <div class="container">
     <img src="Images/blog-2.jpg" height="780" alt="Snow" style="width:100%;">
+
+<!-- text on background img -->
     <div class="centered" style="color: white;">
         <h1>Hello<br><b><div style="color:#E97F71;"><div  style="font-size:140%;">Admin</div></div></b></h1>
         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
     </div>
+<!-- text on background img -->
 </div>
 
 <!-- background img -->
@@ -51,12 +54,14 @@
 <br><br>
 
 
-<!-- titel after img -->
+<!-- titel before img -->
 <div class="title" style="text-align: center;">
     <h1>ADMIN PANNEL</h1>
     <p><div style="color:#4f4f4f;">Please visit here</div></p>
 </div>
-<!-- titel after img -->
+<!-- titel before img -->
+
+
 
 <!-- section 1 -->
 <div class="row">
