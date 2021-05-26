@@ -37,7 +37,8 @@ session_reset();
 <!-- text on background img -->
     <div class="centered" style="color: white;">
         <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
-        <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
+        <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!
+    go to Travel.BD</p>
     </div>
     <!-- text on background img -->
 </div>
@@ -100,7 +101,7 @@ session_reset();
     </div>
     <div class="column_2">
         <div style="text-align: center;">
-            <a href="https://en.wikipedia.org/wiki/Bangladesh"> <h1>Bangladesh</h1> </a><br>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Bangladesh" style="text-decoration: none;"> <h1>Bangladesh</h1> </a><br>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
             <div class="check_text">
             
