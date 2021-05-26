@@ -38,7 +38,7 @@
 
 
 <!-- background img -->
-<div class="container">
+<div class="container1">
     <img src="Images/blog-2.jpg" height="780" alt="Snow" style="width:100%;">
 
 <!-- text on background img -->
