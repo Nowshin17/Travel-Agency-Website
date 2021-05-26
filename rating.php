@@ -20,15 +20,26 @@ td{
     align-items: center;
     padding: 5px;
 }
-form{
-  background-color: lightgrey;
-  width: 40%;
-  align-self: center;
-  border: 2px solid grey;
-  padding-top: 50px;
-  padding-bottom: 50px;
 
-}
+body {
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 30px;
+            }
+
+   .container1 {
+   
+    border-radius: 5px;
+    padding: 70px;
+    border: 2px solid black;
+    width: 18%;
+    height: auto;
+  }
+      
 p{
   padding-bottom: 6px;
 }
@@ -97,7 +108,7 @@ $customer_id = $_SESSION['id'];
 
 
 <center>
-    
+  <div class= "container1"> 
 <h2 style="color: lightblue;">Rating Form</h2></BR>
             <form action="rating.php" method="post">
 
@@ -108,7 +119,7 @@ $customer_id = $_SESSION['id'];
                  <label>places Name : </label>
 
                  <select name="place_name">
-                          <option selected>Place name Name</option>
+                          <option  selected>Place name Name</option>
                         <?php
                             $sql_2 = "SELECT place_name,place_id,place_img FROM place";
                             $result_2 = $conn->query($sql_2);
@@ -130,8 +141,19 @@ $customer_id = $_SESSION['id'];
                   </select>
                  <!-- <input type="text" name="place_name" ></span> -->
 
-                  <label>rating: </label>
-                 <input type="number" name="place_rating"></span>
+                  
+
+                  <label for="browser">rating:</label>
+                      <input list="browsers" name="place_rating" id="browser">
+                        <datalist id="browsers">
+                              <option value="1">
+                              <option value="2">
+                              <option value="3">
+                              <option value="4">
+                              <option value="5">
+                        </datalist>
+                      
+               
 
                 
         </BR>  
@@ -144,6 +166,8 @@ $customer_id = $_SESSION['id'];
             
 
             </form>
+
+            </div>
             </center>
 
 
