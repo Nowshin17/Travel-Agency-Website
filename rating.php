@@ -56,11 +56,11 @@ session_start();
 
 $customer_id = $_SESSION['id'];
    
-  echo $customer_id;
+  // echo $customer_id;
 
    
 
-    
+ 
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -70,18 +70,18 @@ $customer_id = $_SESSION['id'];
                 $place_rating = test_input($_POST["place_rating"]);
                 
               
-                    //     $sql = "INSERT INTO user_rating(cust_id,place_name,place_rating)
-                    //     VALUES ('$cust_id','$place_name','$place_rating')";
+                        $sql = "INSERT INTO user_rating(cust_id,place_name,place_rating)
+                        VALUES ('$cust_id','$place_name','$place_rating')";
 
-                    //     if ($conn->query($sql) === TRUE) {
-                    // echo "Inserted successfully";
-                    // }
-                    //     else {
-                    //     echo "Error: " . $sql . "<br>" . $conn->error;
-                    // }
+                        if ($conn->query($sql) === TRUE) {
+                    echo "Inserted successfully";
+                    }
+                        else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
                 }
 
-   
+              
 
         function test_input($data) {
             $data = trim($data);
@@ -91,7 +91,7 @@ $customer_id = $_SESSION['id'];
 
           }
 
-
+        
 
 ?>
 
@@ -107,28 +107,28 @@ $customer_id = $_SESSION['id'];
 
                  <label>places Name : </label>
 
-                 <!-- <select name="trans_name">
-            <option selected>Transport Name</option>
-                <?php
-                    $sql_2 = "SELECT trans_name,avl_seat,trans_fare,trans_type FROM transport";
-                    $result_2 = $conn->query($sql_2);
-                    if($result_2->num_rows>0)
-                    {
-                        while($row = $result_2->fetch_assoc())
-                        {
-                ?>
-                            <td><?php echo $row['trans_name'];  ?></td>
-                            <option value="<?php echo $row['trans_name'];   ?>"><?php echo $row['trans_name'];   ?></option>
-                            <?php
-                        }
-                    }
-                        else
-                        {
-                            echo "there is an error occur<br>";
-                        }
+                 <select name="place_name">
+                          <option selected>Place name Name</option>
+                        <?php
+                            $sql_2 = "SELECT place_name,place_id,place_img FROM place";
+                            $result_2 = $conn->query($sql_2);
+                            if($result_2->num_rows>0)
+                            {
+                                while($row = $result_2->fetch_assoc())
+                                {
                         ?>
-        </select> -->
-                 <input type="text" name="place_name" ></span>
+                                    <td><?php echo $row['place_name'];  ?></td>
+                                    <option value="<?php echo $row['place_name'];   ?>"><?php echo $row['place_name'];   ?></option>
+                                    <?php
+                                }
+                            }
+                                else
+                                {
+                                    echo "there is an error occur<br>";
+                                }
+                                ?>
+                  </select>
+                 <!-- <input type="text" name="place_name" ></span> -->
 
                   <label>rating: </label>
                  <input type="number" name="place_rating"></span>
@@ -198,6 +198,11 @@ if($result = $conn->query($sql)){
 echo "</center>";
       
             ?>
+
+
+
+
+
 
 <br><br>
 <center>
