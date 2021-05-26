@@ -3,6 +3,7 @@
 <head>
   <title>Recommendation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nav_css.css">
 <style>
 .error {
   color: red;
@@ -83,24 +84,22 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
 
  // similarity of alice with other
 // getRcommendation($matrix,'alice');
+  ?>
 
-          
-          $sql="SELECT cust_id FROM user_rating where cust_id = $customer_id;" ;
+
+<!-- img galary -->
+<center><h1 style="color:#496078;">Recommended Places for you!</h1></center>
+
+
+<div class="row">
+<?php
+
+$sql="SELECT cust_id FROM user_rating where cust_id = $customer_id;" ;
           if($result = $conn->query($sql)){
             if($result->num_rows > 0){
 
 
-            echo "<br><br><center>";
-            echo "<h2>Show place recommebdation</h2>";
-
-            echo "<table>";
-
-                    echo "<tr>";
-                           echo "<th>recommended places </th>";
-                           echo "<th>rated </th>";
-                    echo "</tr>";
-
-
+        
 
             $rec = array();
 
@@ -109,11 +108,24 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
            
             $rec = getRcommendation($matrix,$username['cust_name']);
             foreach ($rec as $movie => $rating) {
+            ?>
+
+
+                    <div class="column_3">
+                    <a target="_blank" href="visit_place1.php">
+                    <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
+                    </a>
+                    <div ><b>place name:<?php echo $movie; ?></b> </div>
+                    <div ><b>Your rating:<?php echo $rating; ?></b> </div>
+                    
+                    </div>
       
-                        echo "<tr>";
+                        <!-- echo "<tr>";
                             echo "<td>" . $movie . "</td>";
                             echo "<td>" . $rating . "</td>";
-  						 echo "</tr>";
+  						 echo "</tr>"; -->
+
+                           <?php
                     }
                 echo "</table>";
 
@@ -123,30 +135,37 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
                   else{
 
                   
-                    echo "<center><h2>Please Rate your favorite place first!<h2></center>";
-                    echo "<br><br><center>";
-                     echo "<h2>Show place recommebdation</h2>";
+                        echo "<center><h2>You did not rated yet.Please Rate your favorite place first!<h2></center>";
+                        echo "<br><br><center>";
+                       
 
-                    echo "<table>";
+                        echo "<table>";
 
-                    echo "<tr>";
-                           echo "<th>recommended places </th>";
-                           echo "<th>rated </th>";
-                    echo "</tr>";
-                    echo "<tr>";
-                           echo "<th>bandarban </th>";
-                           echo "<th>-</th>";
-                    echo "</tr>";
+                        echo "<tr>";
+                              echo "<th>recommended places </th>";
+                              echo "<th>rated </th>";
+                        echo "</tr>";
+                        echo "<tr>";
+                              echo "<th>bandarban </th>";
+                              echo "<th>-</th>";
+                        echo "</tr>";
                   }
                 }
                  
                   
-
+               
                  
     
             echo "</center>";
 
+
             ?>
+
+            
+</div>
+
+
+
 
  </body> 
  </html>       
