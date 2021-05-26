@@ -25,10 +25,13 @@
 
 <body>
     <h2>Delete Customer</h2>
+
     <form action="delete_customer.php" method="post">
         <input type="text" placeholder="cust_name" name="cust_name">
         <button type="submit" name="delete">delete</button>
     </form>
+
+
     <?php
         if(isset($_POST['delete']))
         {
@@ -52,8 +55,9 @@
             
         }
         ?>
-<br>
-<a href="admin_show.php"><h4>Go to Admin panel</h4></a>
+        
+        <br>
+        <a href="admin_show.php"><h4>Go to Admin panel</h4></a>
 </body>
 
 </html>
