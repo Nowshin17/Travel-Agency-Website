@@ -6,8 +6,7 @@ include('connection.php');
 <head>
     <meta charset="UTF-8">
     <title>Add hotel</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  
+    
     <style> 
             body {
             background: #eee;
@@ -16,12 +15,22 @@ include('connection.php');
             color: #222;
             font-size: 14px;
             line-height: 26px;
-            padding: 30px;
+            padding: 50px;
+            margin: 50px;
+            }
+            .container {
+   
+            border-radius: 5px;
+            padding: 70px;
+            border: 2px solid black;
+            width: 18%;
+            height: auto;
             }
                 
     </style>
 </head>
     <body>
+        <div class="container">
     
         <h1>Add places</h1> 
         <?php
@@ -41,16 +50,18 @@ include('connection.php');
 
         
         <form action = "add_place.php" method = "post" enctype="multipart/form-data">
-            <p>place_name</p>
+            place_name:
             <input type = "text" placeholder = "place name" name = "place_name" />
-            <br><br>
-            <p>place image</p>
-            <input type = "file" name = "uploadfile"><br>
+            Upload place image:
+            <input type = "file" name = "uploadfile"><br><br>
             <input type = "submit" name ="uploadfilesub" value = "upload" />
         </form>
-<br>
+         <br>
         
-        <a href="admin_show.php"><h4>Go to Admin panel</h4></a>
-       
+        
+    </div> 
+    <center>
+    <a href="admin_show.php"><h2>Go to Admin panel</h2></a>
+    </center>
     </body>
 </html>
