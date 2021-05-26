@@ -42,6 +42,7 @@ $customer_id = $_SESSION['id'];
 ?>
 
 <body>
+    
 
 <div class="container">
 <h1>Booking Form</h1>
