@@ -121,6 +121,8 @@ session_reset();
 
 
 <!-- img galary -->
+
+
 <div class="row">
 <div class="column_3">
             <a target="_blank" href="visit_place1.php">
