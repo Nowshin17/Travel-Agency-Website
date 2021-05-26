@@ -17,48 +17,34 @@
             padding: 30px;
             }
 
-
-tr:(n+1){
-	margin: 0;
-}
-table{
-	border: 0px;
-	padding: 0px;
-	text-align: center;
-}
-
-tr, td{
-	border: 0px;
-}
-
-td:first-child{
-	text-align: left;
-}
-tr:nth-of-type(2n){
-	background-color: #bcbcbc;
-	
-}
+            tr:(n+1){
+                margin: 0;
+            }
+            table{
+                border: 0px;
+                padding: 0px;
+                text-align: center;
+                border-collapse: collapse
+            }
+            tr, td{
+                border: 1px;
+            }
+            tr:nth-of-type(2n){
+                background-color: #bcbcbc;      
+            }
+           
     </style>
 </head>
 <body>
     <?php
 
-include('connection.php');
+        include('connection.php');
 
 
-?>
+    ?>
+    
     <h1>User Booking Details</h1>
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-    </style>
+   
     <table class="table table-border">
         <tr>
             <th>Customer ID</th>
