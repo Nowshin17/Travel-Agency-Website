@@ -16,29 +16,28 @@
             line-height: 26px;
             padding: 30px;
             }
-
-
-
             tr:(n+1){
-	margin: 0;
-}
-table{
-	border: 0px;
-	padding: 0px;
-	text-align: center;
-}
+	            margin: 0;
+            }
+            table{
+                border: 0px;
+                padding: 0px;
+                text-align: center;
+                border-collapse: collapse;
+            }
 
-tr, td{
-	border: 0px;
-}
+            tr, td{
+                border: 0px;
+                border: 1px solid black;
+            }
 
-td:first-child{
-	text-align: left;
-}
-tr:nth-of-type(2n){
-	background-color: #bcbcbc;
-	
-}
+            td:first-child{
+                text-align: left;
+            }
+            tr:nth-of-type(2n){
+                background-color: #bcbcbc;
+                
+            }
     </style>
 </head>
 <body>
@@ -55,6 +54,8 @@ $customer_id = $_SESSION['id'];
 
 ?>
 
+
+<!-- User details -->
 <table class="table table-border">
         
         <?php
@@ -73,26 +74,15 @@ $customer_id = $_SESSION['id'];
         <?php } }
         ?>
         
-    </table>
-
+</table>
+<!-- User details -->
 
 
 
 
     
-    <h1>User Booking and Bill Details</h1>
-    <style>
-        table {
-            border-collapse: collapse;
-        }
+<h1>User Booking and Bill Details</h1>
 
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-    </style>
     <table class="table table-border">
         <tr>
             <th>place name</th>
@@ -108,7 +98,7 @@ $customer_id = $_SESSION['id'];
                 {
                     while($row = $result->fetch_assoc())
                     {
-            ?>
+        ?>
         <tr>
             <td><?php echo $row['place_name']; ?></td>
             <td><?php echo $row['hotel_name']; ?></td>
@@ -125,24 +115,13 @@ $customer_id = $_SESSION['id'];
 
 <br><br>
 
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-    </style>
     <table class="table table-border">
         <tr>
-            <th>total room cost</th>
+            
             <th>need room</th>
             <th>need transport seat</th>
-            <th>total transport fare</th>
+            <th>total room cost(cost)</th>
+            <th>total transport fare(cost)</th>
             <th>total bill</th>
         </tr>
         <?php
@@ -154,9 +133,10 @@ $customer_id = $_SESSION['id'];
                     {
             ?>
         <tr>
-            <td><?php echo $row['tot_room_cost']; ?></td>
+            
             <td><?php echo $row['need_room']; ?></td>
             <td><?php echo $row['need_trans_seat']; ?></td>
+            <td><?php echo $row['tot_room_cost']; ?></td>
             <td><?php echo $row['tot_trans_fare']; ?></td>
             <td><?php echo $row['tot_bill']; ?></td>
         </tr>
@@ -166,6 +146,9 @@ $customer_id = $_SESSION['id'];
             echo "there is not any booking or bill<br>";
         }?>
     </table>
+    <center>
+    <a class="nav-link" href="visit_place.php"><h3>Go to User Profile</h3></a>
+    </center>
 
 </body>
 
