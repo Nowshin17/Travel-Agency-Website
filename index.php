@@ -48,49 +48,54 @@ session_reset();
 </b></marquee>
 
 
-<!-- titel before img -->
+<!-- titel after img -->
 <div style="text-align: center;">
-    <h1>Our features</h1>
+    <h1> <div style="color:#496078;">Our features</div></h1>
     <p><div style="color:#4f4f4f;">We are here for you to discover the beautiful places of </div><b>Bangladesh</b></p>
 </div>
-<!-- titel before img -->
+<!-- titel after img -->
 
-
+<!-- info section -->
 <div class="row">
     <div class="column_3">
         <div style="text-align: center;">
             <img src="Image/icons8-place-marker-80.png" alt="">
-            <h2>Place</h2>
-            <p>You can search places. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+            <h3>Place</h3>
+            <p style="color:#4f4f4f;">You can search places. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
         </div>
     </div>
     <div class="column_3">
         <div style="text-align: center;">
             <img src="Image/icons8-hotel-80.png" alt="">
-            <h2>Hotel</h2>
-            <p>You can book hotels. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+            <h3>Hotel</h3>
+            <p style="color:#4f4f4f;">You can book hotels. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
         </div>
     </div>
     <div class="column_3">
         <div style="text-align: center;">
             <img src="Image/icons8-car-64.png" alt="">
-            <h2>Transportation</h2>
-            <p>You can book seats. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.a.</p>
+            <h3>Transportation</h3>
+            <p style="color:#4f4f4f;">You can book seats. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.a.</p>
         </div>
     </div>
 </div>
 <br><br>
-<!-- section -->
+<!-- info section -->
 
+
+<!-- text after info -->
 <div class="title" style="text-align: center;">
-    <h1>Do You Want to know about Bangladesh?</h1>
+    <h1 style="color:#496078;">Do You Want to know about Bangladesh?</h1>
     <p><div style="color:#4f4f4f;">Please visit here</div></p>
 </div>
+<!-- text after info -->
 
+
+<!-- about bd -->
 <div class="row">
     <div class="column_2">
         <div style="text-align: center;">
-            <img style="height: 100%; width: 100%;" src="image/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg" alt="image error">
+            <img style="height: 100%; width: 100%;" src="image/must-visit-places-bangladesh.png" alt="image error">
         </div>
     </div>
     <div class="column_2">
@@ -106,18 +111,22 @@ session_reset();
         </div>
     </div>
 </div>
+<!-- about bd -->
 
 
-<img src="Images/img_bg_4.jpg" height="500" alt="Snow" style="width:100%;">          
+<!-- middle img -->
+<img src="Image/666843.jpg" height="500" alt="Snow" style="width:100%;"> <br><br>         
 
+
+
+
+<!-- img galary -->
 <div class="row">
-
-
 <div class="column_3">
             <a target="_blank" href="visit_place1.php">
              <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
             </a>
-            <div style="text-align: center;" ><b>You can search Places</b><br>Lorem Ipsum is simply dummy
+            <div style="text-align: center;color:#4f4f4f;" ><b>You can search Places</b><br>Lorem Ipsum is simply dummy
              text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>>
     </div>
 
@@ -126,23 +135,20 @@ session_reset();
             <a target="_blank" href="hotel.php">
                 <img src="images/hotel-3.jpg" alt="Northern Lights" width="100%" height="100%">
             </a>
-            <div style="text-align: center;" ><b>You can view hotels</b><br>Lorem Ipsum is simply dummy
+            <div style="text-align: center;color:#4f4f4f;" ><b>You can view hotels</b><br>Lorem Ipsum is simply dummy
              text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
     </div>
 
     <div class="column_3">
             <a target="_blank" href="customer_log.php">
-                <img src="images/hotel-1.jpg" alt="Cinque Terre" width="100%" height="100%">
+                <img src="image/images.jpg" alt="Cinque Terre" width="100%" height="100%">
             </a>
-            <div style="text-align: center;" ><b>You can book a Trip!!</b><br>Lorem Ipsum is simply dummy
+            <div style="text-align: center; color:#4f4f4f;" ><b>You can book a Trip!!</b><br>Lorem Ipsum is simply dummy
              text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
     </div>
 
-    
-    
-
-   
 </div>
+<!-- img galary -->
    
 
 <br><br>
