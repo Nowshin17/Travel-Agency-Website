@@ -23,7 +23,7 @@ session_reset();
 
 <!-- header -->
 <div class="topnav">
-    <a class="logo" href="#"><div style="color:#274A5E;">TravelBD</div></a>
+    <a class="logo" href="#"><div style="color:#274A5E;"><b>TravelBD<b></div></a>
     <a class="active" href="#">Home</a>
     <a href="visit_place1.php">Place</a>
     <a href="hotel.php">Hotel</a>
