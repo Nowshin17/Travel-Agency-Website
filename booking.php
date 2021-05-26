@@ -15,104 +15,94 @@
             line-height: 26px;
            
             }
+            .container {
+   
+            border-radius: 5px;
+            padding: 70px;
+            border: 2px solid black;
+            width: 18%;
+            height: auto;
+            }
+     
                 
     </style>
 </head>
 
 
+
 <?php
-
-
 include('connection.php');
-
 session_start();
 
 if(isset($_GET['place'])){
     $place_name = $_GET['place'];
 }
-
 $customer_id = $_SESSION['id'];
 
 ?>
 
-
-
-  
-
- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
 <body>
+
+<div class="container">
 <h1>Booking Form</h1>
 
-
     <form action="" method="post" >
-       
-      
-       
-        <p>required hotel room</p>
+        required hotel room:
         <input type="number"placeholder="required_room" name="need_room"><br><br>
-        <p>required trasport seat</p>
+        required trasport seat:
         <input type="number" placeholder="required_seat" name="need_trans_seat"><br><br>
 
+        Enter the hotel name:
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="hotel_name">
+                    <option selected>Hotel Name</option>
+                    <?php
+                            $sql_1="SELECT hotel_name,avl_room,room_cost FROM hotel WHERE place_name='$place_name'";
 
-
-        <p>Enter the hotel name</p>
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="hotel_name">
-            <option selected>Hotel Name</option>
-            <?php
-            $sql_1="SELECT hotel_name,avl_room,room_cost FROM hotel WHERE place_name='$place_name'";
-
-            $result_1 = $conn->query($sql_1);
-            if($result_1->num_rows>0)
-            {
-                while($row = $result_1->fetch_assoc())
-                {
-                ?>
-                        <option value="<?php echo $row['hotel_name'];   ?>"><?php echo $row['hotel_name'];   ?></option>
-
-                        <?php
-                }
-            }
-            else
-            {
-                echo "an error occured<br>";
-            }
-
-?>
-
-        </select>
-        <p>Enter the transport name</p>
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="trans_name">
+                            $result_1 = $conn->query($sql_1);
+                            if($result_1->num_rows>0)
+                            {
+                                while($row = $result_1->fetch_assoc())
+                                {
+                                ?>
+                                    <option value="<?php echo $row['hotel_name'];   ?>"><?php echo $row['hotel_name'];   ?></option>
+                                <?php
+                                }
+                            }
+                            else
+                            {
+                                echo "an error occured<br>";
+                            }
+                        ?>
+                </select>
+                
+        Enter transport name:
+        <select name="trans_name">
             <option selected>Transport Name</option>
-            <?php
-        $sql_2 = "SELECT trans_name,avl_seat,trans_fare,trans_type FROM transport";
-        $result_2 = $conn->query($sql_2);
-        if($result_2->num_rows>0)
-        {
-            while($row = $result_2->fetch_assoc())
-            {
-        ?>
-                <td><?php echo $row['trans_name'];  ?></td>
-                <option value="<?php echo $row['trans_name'];   ?>"><?php echo $row['trans_name'];   ?></option>
                 <?php
-            }
-        }
-            else
-            {
-                echo "there is an error occur<br>";
-            }
-            ?>
+                    $sql_2 = "SELECT trans_name,avl_seat,trans_fare,trans_type FROM transport";
+                    $result_2 = $conn->query($sql_2);
+                    if($result_2->num_rows>0)
+                    {
+                        while($row = $result_2->fetch_assoc())
+                        {
+                ?>
+                            <td><?php echo $row['trans_name'];  ?></td>
+                            <option value="<?php echo $row['trans_name'];   ?>"><?php echo $row['trans_name'];   ?></option>
+                            <?php
+                        }
+                    }
+                        else
+                        {
+                            echo "there is an error occur<br>";
+                        }
+                        ?>
         </select>
         <br>
         <br><button type="submit" name="submit">submit</button>
-
-
-
     </form>
+</div>
+
+
     <?php
         if(isset($_POST['submit']))
         {
