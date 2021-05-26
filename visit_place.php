@@ -2,6 +2,7 @@
 <html>
 <?php
     include('connection.php');
+   
      ?>
 <head>
         <meta charset="utf-8">
@@ -32,7 +33,7 @@ $customer_id = $_SESSION['id'];
 
 <!-- header -->
 <div class="topnav">
-    <a class="logo" href="#"><div style="color:#274A5E;">TravelBD</div></a>
+    <a class="logo" href="#"><div style="color:#274A5E;"><b>TravelBD</b></div></a>
     <a class="nav-link" href="#">User Profile</a>
     <a class="nav-link" href="check_book_bill.php">Check bookings and Bills</a>
     <a class="nav-link" href="rating.php">Rate the place</a>
@@ -110,35 +111,42 @@ $customer_id = $_SESSION['id'];
     <br><br>
 
 <!-- img galary -->
-<center><h1 style="color:#496078;">Recommended Places for you!</h1></center>
+<center><h1 style="color:#496078;">Your Rated Places</h1></center>
 <div class="row">
-<div class="column_3">
-            <a target="_blank" href="visit_place1.php">
-             <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
-            </a>
-            <div style="text-align: center;color:#4f4f4f;" ><b>You can search Places</b><br>Lorem Ipsum is simply dummy
-             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>>
-    </div>
+             <?php
+                $sql="SELECT *  FROM user_rating where cust_id = $customer_id;" ;
+                if($result = $conn->query($sql)){
+                if($result->num_rows > 0){
+                    while($row = $result->fetch_assoc()){
+                    
+                ?>    <div class="column_3">
+                <a target="_blank" href="visit_place1.php">
+                <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
+                </a>
+                <div ><b>place name:<?php echo $row['place_name']; ?></b> </div>
+                <div ><b>Your rating:<?php echo $row['place_rating']; ?></b> </div>
+                
+                </div>
 
-    
-    <div class="column_3">
-            <a target="_blank" href="hotel.php">
-                <img src="images/hotel-3.jpg" alt="Northern Lights" width="100%" height="100%">
-            </a>
-            <div style="text-align: center;color:#4f4f4f;" ><b>You can view hotels</b><br>Lorem Ipsum is simply dummy
-             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
-    </div>
-
-    <div class="column_3">
-            <a target="_blank" href="customer_log.php">
-                <img src="image/images.jpg" alt="Cinque Terre" width="100%" height="100%">
-            </a>
-            <div style="text-align: center; color:#4f4f4f;" ><b>You can book a Trip!!</b><br>Lorem Ipsum is simply dummy
-             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
-    </div>
-
+               <?php
+            
+                     }
+                  }
+                
+                else{
+                    echo"<center><div ><b>not rated yet! Nothing to show</b> </div></center>";
+                }
+            }
+                ?>
 </div>
 <!-- img galary -->
+
+
+<center><a href="recommendation.php" style="text-decoration: none;"><h1 style="color:#496078;">Click here to See Your Recommended Places
+</h1></a></center><br><br>
+
+
+
 
 
 <!-- footet -->
