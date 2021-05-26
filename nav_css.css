@@ -6,23 +6,18 @@
     background-color:#f2f2f2;
     overflow: hidden;
     
+    
   }
   .topnav a {
     float: left;
     color:  #333;
     text-align: center;
-    padding: 14px 16px;
+    padding: 17px 20px;
     text-decoration: none;
     font-size: 17px;
   }
   
   body {
-    /* background: #eee;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #222;
-    font-size: 14px;
-    line-height: 26px; */
     font-family: 'Lato', sans-serif;
     
     }
@@ -37,21 +32,21 @@
     color: white;
   }
 
-
+  /* background img */
   .container {
     position: relative;
     text-align: center;
-    
-    
   }
-  
+
+  /* background img text */
   .centered {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-20%, -50%);
+    top: 35%;
+    left: 10%;
     text-align: left;
+    
   }
+ 
   
   .column_3 {
     float: left;
