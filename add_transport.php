@@ -3,25 +3,29 @@
 include('connection.php');
 ?>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Add hotel</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  
+    <title>Add transport</title>
     <style> 
             body {
             background: #eee;
             font-family: 'Lato', sans-serif;
             font-weight: 400;
-            color: #222;
             font-size: 14px;
-            line-height: 26px;
             padding: 30px;
+            }
+            .container {
+            border-radius: 5px;
+            padding: 70px;
+            border: 2px solid black;
+            width: 18%;
+            height: auto;
             }
     </style>
 </head>
+
     <body>
+    <div class="container">
         <h1>Add transport information</h1>
         <form action="add_transport.php" method="post">
             <p>transport type</p>
@@ -64,6 +68,7 @@ include('connection.php');
             }
             ?>
         </form>
+        </div>
 
         <br>
         <a href="admin_show.php"><h4>Go to Admin panel</h4></a>
