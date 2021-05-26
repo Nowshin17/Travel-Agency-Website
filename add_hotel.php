@@ -6,22 +6,27 @@ include('connection.php');
 <head>
     <meta charset="UTF-8">
     <title>Add hotel</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  
     <style> 
             body {
             background: #eee;
             font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            color: #222;
+            font-weight: 400;;
             font-size: 14px;
-            line-height: 26px;
-            padding: 30px;
+            padding: 50px;
+            }
+            .container {
+   
+            border-radius: 5px;
+            padding: 70px;
+            border: 2px solid black;
+            width: 18%;
+            height: auto;
             }
     </style>
 </head>
 
     <body>
+    <div class="container">
         <h1>Add hotel information</h1>
         <form action="add_hotel.php" method="post">
             <p>hotel name</p>
@@ -63,6 +68,7 @@ include('connection.php');
             
         }
         ?>
+        </div>
 
         <center>
         <a href="admin_show.php"><h3>Go to Admin panel</h3></a>
