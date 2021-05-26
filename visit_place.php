@@ -92,7 +92,7 @@ $customer_id = $_SESSION['id'];
 
         <?php
             
-        }
+          }
         }
         ?>
     </table>
