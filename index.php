@@ -32,7 +32,7 @@ session_reset();
 
 
 <!-- background img -->
-<div class="container1">
+<div class="container">
     <img src="Images/slide_2.jpg" height="630" alt="Snow" style="width:100%;">
 <!-- text on background img -->
     <div class="centered" style="color: white;">
