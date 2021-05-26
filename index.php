@@ -8,10 +8,6 @@
             <meta charset="utf-8">
             <title>travelBD</title>
             <link rel="icon" href="Image/logo.png">
-            
-            <!-- font -->
-            <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400" rel="stylesheet">
-
             <link rel="stylesheet" href="nav_css.css">
  
 </head>
@@ -38,10 +34,12 @@ session_reset();
 <!-- background img -->
 <div class="container">
     <img src="Images/slide_2.jpg" height="630" alt="Snow" style="width:100%;">
+<!-- text on background img -->
     <div class="centered" style="color: white;">
         <h1>Welcome to <br><b><div style="color:#6eef83;"><div  style="font-size:140%;">Bangladesh </div></div></b></h1>
         <p>TravelBD is multipurpose place, with cheap and great Travel packages.<br>TravelBD is perfect place for you to tavel!</p>
     </div>
+    <!-- text on background img -->
 </div>
 
 <!-- background img -->
@@ -50,12 +48,13 @@ session_reset();
 </b></marquee>
 
 
-<!-- section -->
+<!-- titel before img -->
 <div style="text-align: center;">
     <h1>Our features</h1>
-    
     <p><div style="color:#4f4f4f;">We are here for you to discover the beautiful places of </div><b>Bangladesh</b></p>
 </div>
+<!-- titel before img -->
+
 
 <div class="row">
     <div class="column_3">
