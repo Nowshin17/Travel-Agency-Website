@@ -111,39 +111,34 @@ $customer_id = $_SESSION['id'];
             $need_room=$_POST['need_room'];
             $need_trans_seat=$_POST['need_trans_seat'];
             
-            
+            //hotel seat is available or nor from selected hotel
             $sql_3 = "SELECT avl_room FROM hotel WHERE hotel_name ='$hotel_name'";
             $result_3 = $conn->query($sql_3);
             $row_3 = $result_3->fetch_assoc();
             $available_room = $row_3['avl_room'];
             
-            
+            //transport seat is available or nor from selected transport
             $sql_4="SELECT avl_seat FROM transport WHERE trans_name ='$transport_name'";
             $result_4 = $conn->query($sql_4);
             $row_4=$result_4->fetch_assoc();
             $available_seat = $row_4['avl_seat'];
+            // inser into booking
             if($result_3->num_rows==0||$result_4->num_rows==0)
             {
                 echo "entered hotel name or transport name is not exist<br>";
             }
             else if($need_room>$available_room)
             {
-                echo "sorry there is not enough room<br>";
+                echo "sorry there is not enough room in your selected hotel<br>";
             }
             else if($need_trans_seat>$available_seat)
             {
-                echo "sorry there is not enough seat<br>";
+                echo "sorry there is not enough seat your selected tranport<br>";
             }
             else
             {
                 $sql_5 = "INSERT INTO booking (cust_id,place_name,hotel_name,need_trans_seat,need_room,trans_name) VALUES ('$customer_id','$place_name','$hotel_name','$need_trans_seat',$need_room,'$transport_name')";
-               /* echo "customer id ".$customer_id."<br>";
-                echo "place name ".$place_name."<br>";
-                echo "hotel name ".$hotel_name."<br>";
-                echo "need transport seat ".$need_trans_seat."<br>";
-                echo "need room ".$need_room."<br>";
-                echo "transport name ".$transport_name."<br>";
-                */
+              
                 
                 if($conn->query($sql_5))
                 {
@@ -155,43 +150,41 @@ $customer_id = $_SESSION['id'];
                 }
                 
                  
-                
+            // update hotel and trabsport seat    
             $temp_room = $available_room - $need_room;
             $temp_seat = $available_seat - $need_trans_seat;
-           // echo "room baki ace ".$temp_room."<br>";
-            //echo "seat khali ace ".$temp_seat."<br>";
+           
+
             $sql_6 = "UPDATE hotel SET avl_room='$temp_room' WHERE hotel_name='$hotel_name'";
             if($conn->query($sql_6)==true)
             {
                 echo "room update<br>";
             }
             $sql_7 = "UPDATE transport SET avl_seat='$temp_seat' WHERE trans_name='$transport_name'";
-            
             if($conn->query($sql_7)==true)
             {
                 echo "seat update<br>";
             }
             
-    
+
+            // calculate to tal bill
             $sql_8 = "SELECT room_cost FROM hotel WHERE hotel_name = '$hotel_name' ";
             $result_8 = $conn->query($sql_8);
             $row_8 = $result_8->fetch_assoc();
             $room_cost = $row_8['room_cost'];
-            //echo "room cost".$room_cost."<br>";
+            
             
             $sql_9 = "SELECT trans_fare FROM transport WHERE trans_name = '$transport_name'";
             $result_9 = $conn->query($sql_9);
             $row_9 = $result_9->fetch_assoc();
             $trans_fare = $row_9['trans_fare'];
-            //echo "transport cost ".$trans_fare."<br>";
             
+           
+            // inser into customer bill
             $tot_room_cost = $need_room * $room_cost;
             $tot_trans_fare = $need_trans_seat * $trans_fare;
             $total_bill = $tot_room_cost + $tot_trans_fare;
-            
-           // echo "total room cost ".$tot_room_cost."<br>";
-           // echo "total transport fare ".$tot_trans_fare."<br>";
-            
+             
             $sql_10 = "INSERT INTO customer_bill (cust_id,tot_room_cost,need_room,need_trans_seat,tot_trans_fare,tot_bill) VALUES ('$customer_id','$tot_room_cost','$need_room','$need_trans_seat','$tot_trans_fare','$total_bill')";
             
             $conn->query($sql_10);
@@ -209,22 +202,18 @@ $customer_id = $_SESSION['id'];
             border: black;
             color: white;
             padding: 15px 32px;
-            /*text-align: right;*/
             text-decoration: underline;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
+            margin: 3px 2px;
             cursor: pointer;
         }
 
-        .button_div {
-            text-align: center;
-        }
-
+        
     
     </style>
 
-    <div class="button_div"><a href="check_book_bill.php" class="button">Check Book and Bill</a></div>
+    <br><br><div class="button_div"><a href="check_book_bill.php" class="button">Check Book and Bill</a></div>
     <div class="button_div"><a href="visit_place.php" class="button">Go to User Profile</a></div>
     
 
