@@ -44,7 +44,7 @@ $customer_id = $_SESSION['id'];
 <!-- header -->
 
 <!-- background img -->
-<div class="container1">
+<div class="container">
     <img src="Images/img_bg_3.jpg" height="730" alt="Snow" style="width:100%;">
     <div class="centered" style="color: white;">
         <?php
