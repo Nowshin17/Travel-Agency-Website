@@ -33,7 +33,7 @@
   }
 
   /* background img */
-  .container1 {
+  .container {
     position: relative;
     text-align: center;
   }
@@ -54,7 +54,7 @@
   }
   
   /* Clear floats after the columns */
-  .row1:after {
+  .row:after {
     content: "";
     display: table;
     clear: both;
