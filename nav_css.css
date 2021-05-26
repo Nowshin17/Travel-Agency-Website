@@ -46,8 +46,7 @@
     text-align: left;
     
   }
- 
-  
+  /* info section  */
   .column_3 {
     float: left;
     width: 25%;
@@ -67,13 +66,12 @@
     padding: 5%;
   }
 
-  /* .row.img:hover {
+  /* img:hover {
     opacity: 0.3;
     } */
 
 
   
-
   .button_div {
       text-align: center;
   }
