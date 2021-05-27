@@ -3,28 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/* footer {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #008060;
-   color: white;
-   
-   display: flex;
-   padding-left: 10%;
-  /* height: 100px;*/
-   /* padding: 4%;
-
-}
-footer.p{
-padding: 10px;
-
-} */
 
 
 section {
             padding: 60px 0;
-           /* min-height: 100vh;*/
+         
         }
  ul {
             margin: 0;
@@ -117,8 +100,8 @@ footer img {
                     <div class="contact-content text-center">
                             <ul>
                                 <li>TravelBD</li>
-                                <li><a class="hover-target" href="">Contact us: Travel.BD</a></li>
-                                <li><a class="hover-target" href="">Thank You for visiting us</a></li>
+                                <li><a class="hover-target" style="text-decoration: none;" href="">Contact us: Travel.BD</a></li>
+                                <li><a class="hover-target" style="text-decoration: none;" href="">Thank You for visiting us</a></li>
     
                             </ul>
                     </div>
@@ -131,13 +114,7 @@ footer img {
         <p>Copyright &copy; 2021 All Rights Reserved.</p>
 </footer>
 
-<!-- <footer>
-  <p><b>TravelBD <b> </p> <br>
-  <p>Contact us: Travel.BD</p>
-  <p>Thank You for visiting us</p>
-  
-  
-</footer> -->
+
 
 </body>
 </html> 
