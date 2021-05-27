@@ -14,7 +14,17 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body class="adlog">
+<style>
+
+body {
+  background-image: url('Images/blog-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<body>
   
     <form action="admin.php" method="post">
     <?php $err=" "; ?>
