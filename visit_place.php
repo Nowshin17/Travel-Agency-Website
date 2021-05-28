@@ -43,6 +43,7 @@ $customer_id = $_SESSION['id'];
 </div>
 <!-- header -->
 
+
 <!-- background img -->
 <div class="container">
     <img src="Images/img_bg_3.jpg" height="730" alt="Snow" style="width:100%;">
@@ -63,6 +64,8 @@ $customer_id = $_SESSION['id'];
      </div>
 </div>
 <!-- background img -->
+  
+
   
     <br><br>
 <!-- booking table -->
