@@ -127,7 +127,7 @@ body {
                 else
                 {
                     $sql_1 = "SELECT * FROM customer WHERE cust_mail = '$customer_mail'";
-                    // if $sql_1 get value it will return some value otherwise insert value
+                    // if $sql_1 get value it will return some value means email exist otherwise insert value
                     $result = $conn->query($sql_1); 
                     
                     if($result->num_rows==0)
