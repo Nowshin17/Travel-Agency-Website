@@ -130,7 +130,7 @@ session_reset();
              <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
             </a>
             <div style="text-align: center;color:#4f4f4f;" ><b>You can search Places</b><br>Lorem Ipsum is simply dummy
-             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>>
+             text of the printinghe 1500s, when an unknown printer took a galley of type and scrambled it to </div>
     </div>
 
     
