@@ -112,13 +112,13 @@ $customer_id = $_SESSION['id'];
             $need_room=$_POST['need_room'];
             $need_trans_seat=$_POST['need_trans_seat'];
             
-            //hotel seat is available or nor from selected hotel
+            //hotel seat is available or not from selected hotel
             $sql_3 = "SELECT avl_room FROM hotel WHERE hotel_name ='$hotel_name'";
             $result_3 = $conn->query($sql_3);
             $row_3 = $result_3->fetch_assoc();
             $available_room = $row_3['avl_room'];
             
-            //transport seat is available or nor from selected transport
+            //transport seat is available or not from selected transport
             $sql_4="SELECT avl_seat FROM transport WHERE trans_name ='$transport_name'";
             $result_4 = $conn->query($sql_4);
             $row_4=$result_4->fetch_assoc();
@@ -181,11 +181,11 @@ $customer_id = $_SESSION['id'];
             $trans_fare = $row_9['trans_fare'];
             
            
-            // inser into customer bill
+        
             $tot_room_cost = $need_room * $room_cost;
             $tot_trans_fare = $need_trans_seat * $trans_fare;
             $total_bill = $tot_room_cost + $tot_trans_fare;
-             
+            // inser into customer bill
             $sql_10 = "INSERT INTO customer_bill (cust_id,tot_room_cost,need_room,need_trans_seat,tot_trans_fare,tot_bill) VALUES ('$customer_id','$tot_room_cost','$need_room','$need_trans_seat','$tot_trans_fare','$total_bill')";
             
             $conn->query($sql_10);
