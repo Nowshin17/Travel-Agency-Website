@@ -94,6 +94,7 @@ $users=mysqli_query($conn,"select cust_name from customer where cust_id=$custome
 <div class="row">
 <?php
 
+// does user id has rated or not
 $sql="SELECT cust_id FROM user_rating where cust_id = $customer_id;" ;
           if($result = $conn->query($sql)){
             if($result->num_rows > 0){
@@ -115,8 +116,8 @@ $sql="SELECT cust_id FROM user_rating where cust_id = $customer_id;" ;
                     <a target="_blank" href="visit_place1.php">
                     <img  src="images/tour-8.jpg" alt="Mountains" width="100%" height="95%">
                     </a>
-                    <div ><b>place name:<?php echo $movie; ?></b> </div>
-                    <div ><b>Your rating:<?php echo $rating; ?></b> </div>
+                    <div ><b>Recommended place:  <?php echo $movie; ?></b> </div>
+                    <div ><b>recommended ratings:<?php echo $rating; ?></b> </div>
                     
                     </div>
       
@@ -166,6 +167,19 @@ $sql="SELECT cust_id FROM user_rating where cust_id = $customer_id;" ;
 
 
 
+<center>
+<div class="button_div"><a href="visit_place.php" class="button">Go to User Profile</a></div>
+</center>
+<br><br>
+
+
+<!-- footet -->
+
+<?php
+    include('footer.php');
+     ?>
+
+<!-- footer section -->
 
  </body> 
  </html>       
